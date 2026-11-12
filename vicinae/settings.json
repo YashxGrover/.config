@@ -1,0 +1,104 @@
+// This configuration is merged with the default vicinae configuration file, which you can obtain by running the `vicinae config default` command.
+// Every item defined in this file takes precedence over the values defined in the default config or any other imported file.
+//
+// You can make manual edits to this file, however you should keep in mind that this file may be written to by vicinae when a configuration change is made through the GUI.
+// When that happens, any custom comments or formatting will be lost.
+//
+// If you want to maintain a configuration file with your own comments and formatting, you should create a separate file and add it to the 'imports' array.
+//
+// Learn more about configuration at https://docs.vicinae.com/config
+
+{
+   "$schema": "https://vicinae.com/schemas/config.json",
+   "close_on_focus_loss": true,
+   "activate_on_single_click": true,
+   "global_shortcuts": {
+      "toggle": "control+SPACE"
+   },
+   "theme": {
+      "dark": {
+         "name": "evergarden-winter"
+      }
+   },
+   "providers": {
+      "@thomas/store.raycast.visual-studio-code": {
+         "preferences": {
+            "build": "Code",
+            "layout": "list",
+            "keepSectionOrder": false,
+            "closeOtherWindows": false,
+            "terminalApp": "com.apple.Terminal",
+            "openInNewTerminalTab": true,
+            "showGitBranch": true,
+            "gitBranchColor": ""
+         }
+      },
+      "@thomaslombart/store.raycast.github": {
+         "preferences": {
+            "defaultSearchTerms": "author:@me",
+            "vscodeBuild": "vscode",
+            "repositoryCloneProtocol": "https",
+            "isOpenInBrowser": false,
+            "includeTeamReviewRequests": true,
+            "repositoryFilterMode": "all"
+         }
+      },
+      "applications": {
+         "entrypoints": {
+            "com.apple.Safari": {
+               "alias": "B2"
+            },
+            "com.apple.Safari.WebApp.3E07BDF8-ABFA-444E-BD99-B49B8433478E": {
+               "alias": "R1"
+            },
+            "com.apple.Safari.WebApp.3E44B9DB-6CFD-40C1-B59A-113A79BAAB91": {
+               "alias": "A3"
+            },
+            "com.apple.Safari.WebApp.3F4DF4EF-939B-4269-8B9D-4D36EF1138F2": {
+               "alias": "A2"
+            },
+            "com.apple.Safari.WebApp.C4DAC423-B34A-4C6A-AF8B-13ECB8A0BD6E": {
+               "alias": "A1"
+            },
+            "com.brave.Browser.nightly": {
+               "alias": "B4"
+            },
+            "com.officecommun.search": {
+               "alias": "B3"
+            },
+            "com.pauldavis.crest": {
+               "alias": "B1"
+            },
+            "com.spotify.client": {
+               "alias": "R2"
+            }
+         }
+      },
+      "clipboard": {
+         "preferences": {
+            "monitoring": true
+         }
+      },
+      "core": {
+         "entrypoints": {
+            "sponsor": {
+               "enabled": false
+            }
+         }
+      },
+      "macos-settings": {
+         "entrypoints": {
+            "com.apple.Spotlight-Settings.extension": {
+               "enabled": false
+            }
+         }
+      },
+      "system": {
+         "entrypoints": {
+            "browse-apps": {
+               "enabled": true
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,133 @@
+#!/bin/bash
+source "$HOME/.config/sketchybar/colors.sh"
+source "$HOME/.config/sketchybar/icons.sh"
+PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
+NF="Hack Nerd Font"
+
+sketchybar --bar position=top height=36 color=$BAR blur_radius=30 \
+  border_width=0 padding_left=10 padding_right=10 sticky=on
+
+sketchybar --default updates=when_shown \
+  icon.font="$NF:Bold:14.0" label.font="SF Pro:Medium:13.0" \
+  icon.color=$ORANGE label.color=$FG \
+  icon.padding_left=10 icon.padding_right=6 \
+  label.padding_left=0 label.padding_right=10 \
+  padding_left=4 padding_right=4 \
+  background.color=$PILL background.corner_radius=13 background.height=26 \
+  background.border_width=1 background.border_color=$PILL_BORDER
+
+POPUP=(popup.align=right popup.height=26 popup.blur_radius=30
+  popup.background.color=$POPUP_BG popup.background.corner_radius=12
+  popup.background.border_width=1 popup.background.border_color=$PILL_BORDER)
+
+# ---------- Left ----------
+sketchybar --add item apple left \
+  --set apple icon="$ICON_APPLE" icon.color=$FG icon.padding_right=10 label.drawing=off \
+        click_script="open -a 'System Settings'" \
+  --add item front_app left \
+  --set front_app icon="$ICON_APP" icon.color=$YELLOW script="$PLUGIN_DIR/front_app.sh" \
+  --subscribe front_app front_app_switched
+
+# ---------- Right (first added = rightmost) ----------
+# Clock + calendar popup
+sketchybar --add item clock right \
+  --set clock icon="$ICON_CLOCK" update_freq=30 script="$PLUGIN_DIR/clock.sh" \
+        click_script="$PLUGIN_DIR/clock_popup.sh" "${POPUP[@]}" \
+  --subscribe clock mouse.exited.global
+for i in 1 2 3 4 5 6 7 8; do
+  sketchybar --add item clock.cal$i popup.clock \
+    --set clock.cal$i icon.drawing=off background.drawing=off label="" \
+          label.font="$NF:Regular:12.0" label.padding_left=14 label.padding_right=14
+done
+sketchybar --add item clock.hdr popup.clock \
+  --set clock.hdr icon.drawing=off background.drawing=off label="Upcoming" \
+        label.color=$YELLOW label.font="SF Pro:Bold:12.0" label.padding_left=14
+for i in 1 2 3 4 5; do
+  sketchybar --add item clock.ev$i popup.clock \
+    --set clock.ev$i icon.drawing=off background.drawing=off label="" \
+          label.color=$AQUA label.font="SF Pro:Medium:12.0" \
+          label.padding_left=14 label.padding_right=14
+done
+
+sketchybar --add item calendar_event right \
+  --set calendar_event icon="$ICON_NEXT" icon.color=$AQUA update_freq=120 \
+        script="$PLUGIN_DIR/calendar_event.sh" click_script="open -a Calendar"
+
+# Battery + details popup
+sketchybar --add item battery right \
+  --set battery update_freq=120 script="$PLUGIN_DIR/battery.sh" \
+        click_script="$PLUGIN_DIR/battery_popup.sh" "${POPUP[@]}" \
+  --subscribe battery system_woke power_source_change mouse.exited.global
+for i in 1 2 3 4; do
+  sketchybar --add item battery.p$i popup.battery \
+    --set battery.p$i icon.drawing=off background.drawing=off label="" \
+          label.padding_left=14 label.padding_right=14
+done
+
+# Volume + slider popup
+sketchybar --add item volume right \
+  --set volume icon.color=$BLUE script="$PLUGIN_DIR/volume.sh" \
+        click_script="sketchybar --set volume popup.drawing=toggle" "${POPUP[@]}" \
+  --subscribe volume volume_change mouse.exited.global \
+  --add slider volume.slider popup.volume 120 \
+  --set volume.slider slider.highlight_color=$ORANGE slider.background.color=$BG2 \
+        slider.background.height=6 slider.background.corner_radius=3 \
+        slider.knob="●" slider.knob.drawing=on background.drawing=off \
+        script="$PLUGIN_DIR/volume_slider.sh" \
+  --subscribe volume.slider mouse.clicked
+
+sketchybar --add item wifi right \
+  --set wifi icon="$ICON_WIFI" icon.color=$PURPLE update_freq=15 script="$PLUGIN_DIR/wifi.sh"
+
+sketchybar --add item cpu right \
+  --set cpu icon="$ICON_CPU" icon.color=$GREEN update_freq=5 \
+        script="$PLUGIN_DIR/cpu.sh" click_script="open -a 'Activity Monitor'"
+
+sketchybar --add item memory right \
+  --set memory icon="$ICON_MEM" icon.color=$YELLOW update_freq=10 script="$PLUGIN_DIR/memory.sh"
+
+sketchybar --add item media right \
+  --set media icon="$ICON_MUSIC" icon.color=$ORANGE update_freq=5 drawing=off \
+        script="$PLUGIN_DIR/media.sh"
+
+
+# ---- menu bar peek: click Apple icon to reveal the macOS menu bar for 10s ----
+sketchybar --set apple click_script="$HOME/.config/sketchybar/plugins/menubar_peek.sh"
+sketchybar --bar topmost=on
+
+# ---- KiwiDesk desktop / spaces ----
+sketchybar --add event kiwi_update
+sketchybar --add item kiwi.desk left \
+  --set kiwi.desk icon="󰍹" icon.color=$YELLOW script="$PLUGIN_DIR/kiwi.sh" \
+  --subscribe kiwi.desk kiwi_update
+sketchybar --add item kiwi.mode left \
+  --set kiwi.mode icon.drawing=off label.color=$AQUA script="$PLUGIN_DIR/kiwi.sh" \
+  --subscribe kiwi.mode kiwi_update
+for i in 1 2 3 4 5 6 7; do
+  sketchybar --add item kiwi.space$i left \
+    --set kiwi.space$i icon.drawing=off label="$i" label.padding_left=9 label.padding_right=9 \
+          padding_left=2 padding_right=2 script="$PLUGIN_DIR/kiwi.sh" \
+    --subscribe kiwi.space$i kiwi_update
+done
+
+# ---- CPU / GPU / MEM graph bars (replace the old text items) ----
+sketchybar --remove cpu --remove memory 2>/dev/null
+for m in "mem:󰍛:$YELLOW" "gpu:󰢮:$BLUE" "cpu::$GREEN"; do
+  IFS=: read -r n ic co <<< "$m"
+  sketchybar --add graph $n right 46 \
+    --set $n icon="$ic" icon.color=$co graph.color=$co graph.fill_color=$co \
+          graph.line_width=1.5 label="0%" label.width=40 label.align=right
+done
+sketchybar --set cpu update_freq=3 script="$PLUGIN_DIR/stats.sh"
+
+
+# ---- no click actions that open apps ----
+sketchybar --set calendar_event click_script="" \
+           --set cpu click_script="" --set gpu click_script="" --set mem click_script="" \
+           --set media click_script="" --set clock click_script=""
+
+# ---- poll KiwiDesk for desktop/space state ----
+sketchybar --add item kiwi.poll left \
+  --set kiwi.poll drawing=off updates=on update_freq=1 \
+        script="$PLUGIN_DIR/kiwi_poll.sh"
+sketchybar --update

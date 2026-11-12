@@ -1,0 +1,535 @@
+# Mole Cleanup Preview - 2026-11-11 16:26:09
+#
+# How to protect files:
+# 1. Run mo clean --whitelist and press Enter to save your selections
+# 2. Append paths below to ~/.config/mole/whitelist, one per line
+# A saved file replaces optional defaults; built-in safety protections still apply.
+#
+# Example:
+#   /Users/*/Library/Caches/com.example.app
+#
+
+
+=== User essentials ===
+/Users/yash/Library/Caches/Crest  # 16.2MB
+/Users/yash/Library/Caches/GeoServices  # 8KB
+/Users/yash/Library/Caches/PHTPhenotype  # 0B
+/Users/yash/.Trash/prasertkana.powerpoint-viewer-sidekick-1.2.3  # 930KB
+/Users/yash/.Trash/AA5E82B9-289A-480C-A14B-242989107275.png  # 57KB
+/Users/yash/.Trash/CF6347E2-4F81-4410-8892-4830991B6C5A.png  # 29KB
+/Users/yash/.Trash/72B4390D-DF1D-4D51-B179-229BBAEFFF2C.png  # 45KB
+/Users/yash/.Trash/F0AE9EF0-9B47-4BE7-9DBB-288FCE9C9B5B.png  # 66KB
+/Users/yash/.Trash/d12  # 0B
+/Users/yash/.Trash/com.apple.AvatarKit  # 0B
+/Users/yash/.Trash/20261110T132755  # 557KB
+/Users/yash/.Trash/15A8BC97-45AC-45DC-9AF9-313808C578BC.png  # 53KB
+/Users/yash/.Trash/cweijan.vscode-office-4.2.3  # 13.9MB
+/Users/yash/.Trash/B8F204CE-6024-49AB-85F9-7CA2F6DCD226.png  # 49KB
+/Users/yash/.Trash/d15  # 0B
+/Users/yash/.Trash/com.apple.siri.flowtools  # 160KB
+/Users/yash/.Trash/86E89C23-C39B-44C8-A985-E56EEA6456FE.png  # 45KB
+/Users/yash/.Trash/d23  # 0B
+/Users/yash/.Trash/d17 16-25-17-922  # 0B
+/Users/yash/.Trash/d57 16-25-17-947  # 0B
+/Users/yash/.Trash/8FB0A685-4360-4F17-8245-1D2E230C9683.png  # 57KB
+/Users/yash/.Trash/7C643A39-C0B2-4BA0-8BC2-2EAA47CC580E.png  # 45KB
+/Users/yash/.Trash/20A0F234-6E93-4C96-8A9E-0E48ECDC8303.png  # 37KB
+/Users/yash/.Trash/d24  # 0B
+/Users/yash/.Trash/d24 16-25-17-966  # 0B
+/Users/yash/.Trash/ms-python.debugpy-2026.6.0-darwin-arm64  # 9.7MB
+/Users/yash/.Trash/d12 16-25-17-958  # 0B
+/Users/yash/.Trash/F1A18DA6-D397-4A40-8541-2DC16E24F1A0.png  # 45KB
+/Users/yash/.Trash/d48  # 0B
+/Users/yash/.Trash/d15 16-25-17-960  # 0B
+/Users/yash/.Trash/d64 16-25-17-992  # 0B
+/Users/yash/.Trash/com.apple.helpd  # 0B
+/Users/yash/.Trash/d42 16-25-17-978  # 0B
+/Users/yash/.Trash/d41  # 0B
+/Users/yash/.Trash/d45 16-25-17-940  # 0B
+/Users/yash/.Trash/d63 16-25-17-992  # 0B
+/Users/yash/.Trash/d46  # 0B
+/Users/yash/.Trash/1BF923B1-6344-404A-9797-B8449ADA1811.png  # 49KB
+/Users/yash/.Trash/F390FE3B-FA61-483D-BADC-2447F89951BA.png  # 61KB
+/Users/yash/.Trash/8590D0C5-E344-4FAC-A39A-FD7BC652AEDA.png  # 49KB
+/Users/yash/.Trash/C7AD3D0A-7EDF-412C-A237-B3C9D27381A1.png  # 53KB
+/Users/yash/.Trash/ms-python.python-2026.10.0-darwin-arm64  # 9.2MB
+/Users/yash/.Trash/FAC6A79E-6A4D-441C-8BF7-9A3032CF2DCE.png  # 49KB
+/Users/yash/.Trash/EC67726A-8212-4C5E-83CF-8412932740D2.png  # 45KB
+/Users/yash/.Trash/DAD82DCE-F3AE-4AEC-8A79-1694D412FC0A.png  # 57KB
+/Users/yash/.Trash/d25  # 0B
+/Users/yash/.Trash/d58 16-25-17-988  # 0B
+/Users/yash/.Trash/E5799A24-1949-4E66-A17B-B5EB05F28C5D.png  # 49KB
+/Users/yash/.Trash/com.apple.dt.Xcode  # 0B
+/Users/yash/.Trash/7530C83C-8F7B-42C6-BB71-5FA2ED070BEC.png  # 53KB
+/Users/yash/.Trash/d22  # 0B
+/Users/yash/.Trash/581A4F1A-2B6D-468C-A1BE-6F473F06D10B.png  # 45KB
+/Users/yash/.Trash/d14  # 0B
+/Users/yash/.Trash/d36 16-25-17-934  # 0B
+/Users/yash/.Trash/DD266E1F-5DF2-4CDB-A2EB-26CE35664657.png  # 61KB
+/Users/yash/.Trash/640DFB00-FBB9-45DA-9444-9F663859F4BC.png  # 37KB
+/Users/yash/.Trash/20261109T195122  # 303KB
+/Users/yash/.Trash/E161929C-0819-4BC2-8359-550C081C7D54.png  # 45KB
+/Users/yash/.Trash/d50 16-25-17-983  # 0B
+/Users/yash/.Trash/6B32236F-EA6D-4419-9422-456C10F3BE0E.png  # 53KB
+/Users/yash/.Trash/B2FC91ED-6891-4DEB-85A1-268B2B4160B6.png  # 45KB
+/Users/yash/.Trash/d39 16-25-17-936  # 0B
+/Users/yash/.Trash/d13  # 0B
+/Users/yash/.Trash/d47  # 0B
+/Users/yash/.Trash/d40  # 0B
+/Users/yash/.Trash/03F5E760-14E4-4856-9EC9-A3507A88FFA8.png  # 45KB
+/Users/yash/.Trash/840FE8E4-D952-4680-B1A7-AC5BACA2C1F8.png  # 49KB
+/Users/yash/.Trash/d49  # 0B
+/Users/yash/.Trash/d63 16-25-17-951  # 0B
+/Users/yash/.Trash/d21 16-25-17-925  # 0B
+/Users/yash/.Trash/C42AADA1-9110-472A-BF86-B1EF306DA846.png  # 143KB
+/Users/yash/.Trash/5B255F1B-DF1F-42E9-852A-85CDCE386D04.png  # 37KB
+/Users/yash/.Trash/1088217C-1410-4CF7-BDE9-8F573A4DBCD9.png  # 49KB
+/Users/yash/.Trash/d20 16-25-17-924  # 0B
+/Users/yash/.Trash/3AE11B2B-DC66-4720-8A8C-A6C1A504A24E.png  # 37KB
+/Users/yash/.Trash/EB3F48E7-D30F-4079-858F-1A61331D5026.png  # 53KB
+/Users/yash/.Trash/687D03A2-18A5-4181-8E85-38F3A13409B9.png  # 57KB
+/Users/yash/.Trash/4FB6B7A6-1209-4041-A173-103861C9BA05.png  # 45KB
+/Users/yash/.Trash/.DS_Store  # 193KB
+/Users/yash/.Trash/E991AC0C-F272-44D8-88F3-05F44EDFE3AE.png  # 57KB
+/Users/yash/.Trash/d9  # 0B
+/Users/yash/.Trash/d37 16-25-17-935  # 0B
+/Users/yash/.Trash/164E2D5B-706C-4AF5-B207-01B6297A09F2.png  # 57KB
+/Users/yash/.Trash/10F3F263-6662-4DA2-9B00-2226794D8E70.png  # 53KB
+/Users/yash/.Trash/125E88CC-6233-4693-8293-1B8C91AFEC89.png  # 57KB
+/Users/yash/.Trash/67512508-D33E-4CBC-8A9E-BE55CEE35C4C.png  # 49KB
+/Users/yash/.Trash/81337355-E156-4242-AAF4-711768D30A54.png  # 37KB
+/Users/yash/.Trash/C6DC4E54-1130-44F8-AF6F-A551D8E8A181.png  # 45KB
+/Users/yash/.Trash/d7 16-25-17-953  # 0B
+/Users/yash/.Trash/2F17FCCE-6CCA-4AFA-A08A-C50BF9812DA5.png  # 57KB
+/Users/yash/.Trash/d59 16-25-17-989  # 0B
+/Users/yash/.Trash/d25 16-25-17-966  # 0B
+/Users/yash/.Trash/74834396-888E-4D30-BE33-88BCF6BC30FE.png  # 41KB
+/Users/yash/.Trash/d56 16-25-17-947  # 0B
+/Users/yash/.Trash/d16 16-25-17-922  # 0B
+/Users/yash/.Trash/d7  # 0B
+/Users/yash/.Trash/0DC99DD8-3386-4D1E-8878-C43E97EB710A.png  # 135KB
+/Users/yash/.Trash/EC3DC957-D4C2-4732-AACE-7D0C0F390EC8.png  # 57KB
+/Users/yash/.Trash/d0  # 0B
+/Users/yash/.Trash/91709504-8E99-4277-9BF7-28FB5BF523E1.png  # 33KB
+/Users/yash/.Trash/d28 16-25-17-929  # 0B
+/Users/yash/.Trash/d43 16-25-17-979  # 0B
+/Users/yash/.Trash/d65 16-25-17-993  # 0B
+/Users/yash/.Trash/d60 16-25-17-949  # 0B
+/Users/yash/.Trash/4207734D-74FE-4F92-B5E1-6EC8DEE24A15.png  # 61KB
+/Users/yash/.Trash/89B1643B-06DD-4DEC-B1B0-774493B0F7B7.png  # 33KB
+/Users/yash/.Trash/258A6797-CC13-4C3A-AB35-4F25CA3BF474.png  # 37KB
+/Users/yash/.Trash/d32 16-25-17-971  # 0B
+/Users/yash/.Trash/4C108785-A7BA-422E-9C79-B0129F1D5550.png  # 135KB
+/Users/yash/.Trash/com.microsoft.VSCode.ShipIt  # 0B
+/Users/yash/.Trash/05BF1D79-700D-4E28-9C3B-A55E04B6165D.png  # 57KB
+/Users/yash/.Trash/d30 16-25-17-969  # 0B
+/Users/yash/.Trash/d62 16-25-17-951  # 0B
+/Users/yash/.Trash/d14 16-25-17-959  # 0B
+/Users/yash/.Trash/B1B5DDC5-73C8-4920-8133-BACCE38A08DE.png  # 45KB
+/Users/yash/.Trash/com.apple.preferencepanes.usercache  # 4KB
+/Users/yash/.Trash/1345CAE7-E0B1-455E-B255-025188356E42.png  # 53KB
+/Users/yash/.Trash/localhostname  # 4KB
+/Users/yash/.Trash/4A3590EC-FF30-41E7-85FE-210FF6112917.png  # 57KB
+/Users/yash/.Trash/d13 16-25-17-959  # 0B
+/Users/yash/.Trash/94F2924E-5200-4DB6-BF5A-24AE7DB55C87.png  # 57KB
+/Users/yash/.Trash/44166C39-8566-4ECA-BD16-43159429B52F.png  # 57KB
+/Users/yash/.Trash/d1  # 0B
+/Users/yash/.Trash/E99FA658-A59A-4A2D-9F3B-58E7BDC71A9A.png  # 49KB
+/Users/yash/.Trash/48103A98-1EDA-49A1-A860-D199CB9210A8.png  # 45KB
+/Users/yash/.Trash/20261110T122810  # 291KB
+/Users/yash/.Trash/d6  # 0B
+/Users/yash/.Trash/Homebrew 16-25-17-835  # 0B
+/Users/yash/.Trash/578189A7-D08B-4A22-B94A-9630771826CC.png  # 45KB
+/Users/yash/.Trash/d38 16-25-17-936  # 0B
+/Users/yash/.Trash/d5 16-25-17-943  # 0B
+/Users/yash/.Trash/EE01F02D-1413-436C-AB05-410F224A5B7B.png  # 45KB
+/Users/yash/.Trash/A168628E-11EE-4456-AD66-E7E3E47D1B21.png  # 49KB
+/Users/yash/.Trash/d8  # 0B
+/Users/yash/.Trash/D759828B-4BAB-456B-AD75-225BA238F925.png  # 45KB
+/Users/yash/.Trash/d51 16-25-17-984  # 0B
+/Users/yash/.Trash/A837FA8C-C643-4705-AE92-074EFDD067F7.png  # 53KB
+/Users/yash/.Trash/7F4C26C2-67C2-4C3A-8F07-8A7BF6148C97.png  # 49KB
+/Users/yash/.Trash/METADATA 16-25-17-916  # 0B
+/Users/yash/.Trash/BC0F2DA2-7B11-45A6-8ECC-26820868149A.png  # 49KB
+/Users/yash/.Trash/0C747C29-4BF8-43F6-A5CC-2E012E555341.png  # 49KB
+/Users/yash/.Trash/d44 16-25-17-939  # 0B
+/Users/yash/.Trash/25A6CFB2-3570-4448-B114-244A4E454B7A.png  # 41KB
+/Users/yash/.Trash/js  # 12.1MB
+/Users/yash/.Trash/499995FA-E51A-4ACE-8DFD-BDF8AFF6C943.png  # 49KB
+/Users/yash/.Trash/d54 16-25-17-986  # 0B
+/Users/yash/.Trash/grep-alias  # 4KB
+/Users/yash/.Trash/90E76FEE-E1B4-47A6-AEF0-791F3F1A7244.png  # 25KB
+/Users/yash/.Trash/d43 16-25-17-939  # 0B
+/Users/yash/.Trash/61171241-39F3-4ADE-84AA-9CD4EE4A78DA.png  # 45KB
+/Users/yash/.Trash/DiscRecording.log  # 4KB
+/Users/yash/.Trash/7719B48A-2005-4011-9280-2F64EEC6FD91.png  # 49KB
+/Users/yash/.Trash/11AB4259-C435-4F92-A108-D6B9CC6D2295.png  # 131KB
+/Users/yash/.Trash/d38 16-25-17-976  # 0B
+/Users/yash/.Trash/20633C28-FF90-4C54-B828-BB7F1669F7B4.png  # 61KB
+/Users/yash/.Trash/9C77AC8C-B23D-4ED9-ABD5-73D3CAD38317.png  # 78KB
+/Users/yash/.Trash/d25 16-25-17-927  # 0B
+/Users/yash/.Trash/completions  # 0B
+/Users/yash/.Trash/d46 16-25-17-981  # 0B
+/Users/yash/.Trash/B6461ECC-44F5-4BC9-877F-484A605D0D10.png  # 66KB
+/Users/yash/.Trash/85CE77BF-3413-4A7B-9B0F-732E96229A73.png  # 45KB
+/Users/yash/.Trash/d28 16-25-17-968  # 0B
+/Users/yash/.Trash/Claude  # 4KB
+/Users/yash/.Trash/E540DEE6-4C40-42C8-9CCC-D4CB0FAD7D7B.png  # 57KB
+/Users/yash/.Trash/9641B9D3-BAAA-442E-8D39-080541F04687.png  # 37KB
+/Users/yash/.Trash/E556BBC5-D0A0-4DB1-AC77-BC76E4A526F4.png  # 49KB
+/Users/yash/.Trash/Cache_Data 16-25-17-498  # 9.6MB
+/Users/yash/.Trash/58754319-8709-4AB0-8674-B34F04E7FFE2.png  # 49KB
+/Users/yash/.Trash/D8C8FC8B-9D11-4803-944F-DF284B35FE58.png  # 147KB
+/Users/yash/.Trash/22162A9B-DB90-4517-867C-C676BC3E8E95.png  # 45KB
+/Users/yash/.Trash/63C042F0-90EF-4A95-B7CC-CC9A64BF8421.png  # 49KB
+/Users/yash/.Trash/d13 16-25-17-920  # 0B
+/Users/yash/.Trash/d53 16-25-17-945  # 0B
+/Users/yash/.Trash/8ACF5D77-B22C-416F-B12A-72FB35E2834F.png  # 57KB
+/Users/yash/.Trash/d14 16-25-17-920  # 0B
+/Users/yash/.Trash/d20 16-25-17-963  # 0B
+/Users/yash/.Trash/BC646863-24D5-4172-A4C0-4361F078A1E1.png  # 45KB
+/Users/yash/.Trash/D0CEA7E8-E449-4C78-9390-FBB2D840416B.png  # 57KB
+/Users/yash/.Trash/d22 16-25-17-926  # 0B
+/Users/yash/.Trash/d49 16-25-17-982  # 0B
+/Users/yash/.Trash/.gitkeep  # 0B
+/Users/yash/.Trash/6511D2B5-E185-4886-9505-B4004E920D27.png  # 53KB
+/Users/yash/.Trash/E5D58CC2-3C52-4206-9DA2-427DC88B5896.png  # 45KB
+/Users/yash/.Trash/B62724D0-766A-44C7-8E6F-1B7E7B6CCA5B.png  # 49KB
+/Users/yash/.Trash/wasm  # 8KB
+/Users/yash/.Trash/node_modules  # 4.3MB
+/Users/yash/.Trash/78D1B993-DA5B-4CA6-90F0-865DA7F9091D.png  # 74KB
+/Users/yash/.Trash/d37 16-25-17-975  # 0B
+/Users/yash/.Trash/d60 16-25-17-990  # 0B
+/Users/yash/.Trash/90120D06-5500-4131-868F-B9C3E8824257.png  # 45KB
+/Users/yash/.Trash/DiagnosticReports  # 0B
+/Users/yash/.Trash/83C65C90-270C-4490-9C69-F51FE03D7F06.png  # 37KB
+/Users/yash/.Trash/com.apple.businessservicesd  # 0B
+/Users/yash/.Trash/5929F26F-992D-4729-AFCC-BCDF23D15C32.png  # 86KB
+/Users/yash/.Trash/d39 16-25-17-976  # 0B
+/Users/yash/.Trash/d53  # 0B
+/Users/yash/.Trash/AE0115AE-C53B-4DB9-B12F-CA4B7B630CC9.png  # 53KB
+/Users/yash/.Trash/097CA871-A1C2-40F7-97F0-EFAABF555BBC.png  # 45KB
+/Users/yash/.Trash/d61 16-25-17-991  # 0B
+/Users/yash/.Trash/d54  # 0B
+/Users/yash/.Trash/C3C48B18-E4AE-4A62-877D-0B0D74CDC9E0.png  # 49KB
+/Users/yash/.Trash/data_1  # 270KB
+/Users/yash/.Trash/Homebrew  # 47.1MB
+/Users/yash/.Trash/8C31B06F-91A4-4F7C-93ED-56146D7F48B9.png  # 49KB
+/Users/yash/.Trash/D5E76230-81A3-4F65-A1BA-51B8CADED625.png  # 53KB
+/Users/yash/.Trash/d62  # 0B
+/Users/yash/.Trash/2F52E34C-39D4-4AB1-9025-8F7141FAA720.png  # 49KB
+/Users/yash/.Trash/B004358B-5A27-42E5-B49E-93FC100B2371.png  # 53KB
+/Users/yash/.Trash/E580E5A5-0888-4BE8-A4CA-F74A18A643C3.png  # 49KB
+/Users/yash/.Trash/3CC63110-FF0E-4443-9A2D-63CD0795954E.png  # 49KB
+/Users/yash/.Trash/ms-python.vscode-pylance-2026.4.1  # 29.4MB
+/Users/yash/.Trash/d47 16-25-17-981  # 0B
+/Users/yash/.Trash/97447D85-960C-4B2A-A101-048284D95853.png  # 53KB
+/Users/yash/.Trash/d65  # 0B
+/Users/yash/.Trash/d66 16-25-17-953  # 0B
+/Users/yash/.Trash/d24 16-25-17-927  # 0B
+/Users/yash/.Trash/5C987900-AD53-469C-8210-CABBCCDDFCAE.png  # 53KB
+/Users/yash/.Trash/d31  # 0B
+/Users/yash/.Trash/E302DB2E-5365-401C-959E-3D6A68D1F80A.png  # 45KB
+/Users/yash/.Trash/d52 16-25-17-944  # 0B
+/Users/yash/.Trash/d36  # 0B
+/Users/yash/.Trash/ms-python.vscode-python-envs-1.42.0-darwin-arm64  # 4.2MB
+/Users/yash/.Trash/d12 16-25-17-919  # 0B
+/Users/yash/.Trash/d15 16-25-17-921  # 0B
+/Users/yash/.Trash/d55 16-25-17-986  # 0B
+/Users/yash/.Trash/9CCB8297-E9F5-4699-AE1F-890CFBD5E29C.png  # 57KB
+/Users/yash/.Trash/d38  # 0B
+/Users/yash/.Trash/E54D5AFE-F362-4D48-A20D-F2C21D2B5330.png  # 57KB
+/Users/yash/.Trash/35693AEA-F8C4-4A80-B77D-C94B20A68956.png  # 57KB
+/Users/yash/.Trash/DD7690D7-1B94-4FAA-910C-993C182B6874.png  # 147KB
+/Users/yash/.Trash/d64  # 0B
+/Users/yash/.Trash/d48 16-25-17-982  # 0B
+/Users/yash/.Trash/github.remotehub-0.66.0  # 729KB
+/Users/yash/.Trash/data_0  # 45KB
+/Users/yash/.Trash/appearance-probes  # 4KB
+/Users/yash/.Trash/d23 16-25-17-926  # 0B
+/Users/yash/.Trash/BDA96335-50FF-487F-BDE6-EF00123FDBFB.png  # 78KB
+/Users/yash/.Trash/BA4ECA11-592F-4727-9221-D2A32A16EB28.png  # 49KB
+/Users/yash/.Trash/0F465283-D07A-4E1B-89EF-B087C9968F98.png  # 45KB
+/Users/yash/.Trash/d63  # 0B
+/Users/yash/.Trash/F1F973B2-6182-4A8E-827C-A6EE90CD4242.png  # 41KB
+/Users/yash/.Trash/d36 16-25-17-975  # 0B
+/Users/yash/.Trash/d55  # 0B
+/Users/yash/.Trash/537A4DAB-83B0-4B66-BCD1-05E5DBB4A268.png  # 57KB
+/Users/yash/.Trash/A162BA4F-1FAC-4608-ABA4-8B98F33575DE.png  # 49KB
+/Users/yash/.Trash/FE8E1F9D-59BA-4207-B626-28E34D810D0A.png  # 49KB
+/Users/yash/.Trash/d52  # 0B
+/Users/yash/.Trash/78911B7E-3C69-47AD-B635-9C2486F6301D.png  # 45KB
+/Users/yash/.Trash/473C2FDC-0B75-497A-B1FE-AA1863C9C885.png  # 57KB
+/Users/yash/.Trash/A92E4A3F-9BFC-4772-B3A7-025B54AB1D3D.png  # 49KB
+/Users/yash/.Trash/d39  # 0B
+/Users/yash/.Trash/mathematic.vscode-pdf-0.2.7  # 4.9MB
+/Users/yash/.Trash/d42 16-25-17-938  # 0B
+/Users/yash/.Trash/d3 16-25-17-969  # 0B
+/Users/yash/.Trash/d29 16-25-17-968  # 0B
+/Users/yash/.Trash/CD1D13DD-07F2-436E-9F0C-F528D7ABBEA9.png  # 41KB
+/Users/yash/.Trash/d6 16-25-17-949  # 0B
+/Users/yash/.Trash/com.apple.nsurlsessiond  # 0B
+/Users/yash/.Trash/024891DE-B7F6-4187-BFE0-E6D237702EF0.png  # 61KB
+/Users/yash/.Trash/d37  # 0B
+/Users/yash/.Trash/3D729CFC-9000-48D3-A052-C5BD5B7A6842.png  # 25KB
+/Users/yash/.Trash/d30  # 0B
+/Users/yash/.Trash/F0236EC5-EE72-4058-A6CE-1F7D2E8253BF.png  # 53KB
+/Users/yash/.Trash/d21 16-25-17-964  # 0B
+/Users/yash/.Trash/AFA22C08-A486-4CE8-9A13-E355B6C38559.png  # 37KB
+/Users/yash/.Trash/3FFA2A97-7D28-49EA-AA39-5BC9051B2745.png  # 49KB
+/Users/yash/.Trash/3716DD4B-01C0-4F5B-8DD6-DB771EC472FB.png  # 33KB
+/Users/yash/.Trash/9029A4DA-14F9-4A3C-9D84-76B8F617109B.png  # 37KB
+/Users/yash/.Trash/6DFBFF46-82A0-4B75-B2A9-F2AFE53794B8.png  # 53KB
+/Users/yash/.Trash/d45  # 0B
+/Users/yash/.Trash/4F881F8B-A7D9-4FDB-A917-17BF6AC5A589.png  # 53KB
+/Users/yash/.Trash/F88CDF4A-9681-4D1F-88FE-34F1A3C6A62B.png  # 74KB
+/Users/yash/.Trash/d34 16-25-17-973  # 0B
+/Users/yash/.Trash/d42  # 0B
+/Users/yash/.Trash/E334A6D2-7145-47C8-9B00-C20DED08B2D5.png  # 49KB
+/Users/yash/.Trash/E4B726A1-7DD5-4E5A-A430-C99FE47E7A4F.png  # 45KB
+/Users/yash/.Trash/87060EC2-D006-4102-98CC-3005C68BB343.png  # 45KB
+/Users/yash/.Trash/com.apple.containermanagerd  # 0B
+/Users/yash/.Trash/DD47D8E1-CB66-4C12-BFEA-2ADB0D8D1E2E.png  # 53KB
+/Users/yash/.Trash/d29  # 0B
+/Users/yash/.Trash/001C94AE-2BA4-4E77-A202-F7DE60E8B1C8.png  # 45KB
+/Users/yash/.Trash/6143116D-03BB-485E-864E-A8CF58ACF6F1.png  # 45KB
+/Users/yash/.Trash/d16  # 0B
+/Users/yash/.Trash/d31 16-25-17-931  # 0B
+/Users/yash/.Trash/F439B0A7-D18C-4B14-9681-6520E6A74FE9.png  # 25KB
+/Users/yash/.Trash/d11  # 0B
+/Users/yash/.Trash/d58 16-25-17-948  # 0B
+/Users/yash/.Trash/d18  # 0B
+/Users/yash/.Trash/d50 16-25-17-943  # 0B
+/Users/yash/.Trash/d4 16-25-17-977  # 0B
+/Users/yash/.Trash/d27  # 0B
+/Users/yash/.Trash/d18 16-25-17-923  # 0B
+/Users/yash/.Trash/d40 16-25-17-937  # 0B
+/Users/yash/.Trash/6324F6EB-E0F1-468F-AC2E-A983EBDDD53B.png  # 53KB
+/Users/yash/.Trash/d57 16-25-17-988  # 0B
+/Users/yash/.Trash/d23 16-25-17-965  # 0B
+/Users/yash/.Trash/20261110T184704  # 262KB
+/Users/yash/.Trash/d20  # 0B
+/Users/yash/.Trash/d43  # 0B
+/Users/yash/.Trash/12318CCB-3F78-43B7-A854-EFDCCE5312CD.png  # 45KB
+/Users/yash/.Trash/8002C4C8-C611-4894-A068-3D3A3C03472A.png  # 57KB
+/Users/yash/.Trash/AB7FC3C3-8853-45CD-AB6E-89F0985C2922.png  # 45KB
+/Users/yash/.Trash/com.apple.AssistantServices  # 0B
+/Users/yash/.Trash/F5804DD6-5963-40DA-9FA0-39C0C6E6DEF9.png  # 53KB
+/Users/yash/.Trash/d44  # 0B
+/Users/yash/.Trash/d33 16-25-17-972  # 0B
+/Users/yash/.Trash/d26 16-25-17-928  # 0B
+/Users/yash/.Trash/B13D40FC-C033-436D-A197-185900EC3552.png  # 66KB
+/Users/yash/.Trash/64D11DAB-3B57-4F14-AD2F-E59A9282FA44.png  # 45KB
+/Users/yash/.Trash/d64 16-25-17-952  # 0B
+/Users/yash/.Trash/d45 16-25-17-980  # 0B
+/Users/yash/.Trash/044AD56C-A107-41B2-90CC-E60CCACFBCF5.png  # 33KB
+/Users/yash/.Trash/DE851E6D-C2BE-4D9F-AB54-0F9CE994DC51.png  # 49KB
+/Users/yash/.Trash/ms-vscode.remote-repositories-0.44.0  # 1.1MB
+/Users/yash/.Trash/20261110T125722  # 184KB
+/Users/yash/.Trash/com.apple.assistantd  # 0B
+/Users/yash/.Trash/corotata.pptx-preview-1.0.1  # 438KB
+/Users/yash/.Trash/d21  # 0B
+/Users/yash/.Trash/D7950C0A-27B9-4034-AB5B-EDB89D41341A.png  # 53KB
+/Users/yash/.Trash/52288A31-0F6C-406D-81F0-0F96EE8DBB9C.png  # 66KB
+/Users/yash/.Trash/d9 16-25-17-996  # 0B
+/Users/yash/.Trash/d19  # 0B
+/Users/yash/.Trash/d10 16-25-17-918  # 0B
+/Users/yash/.Trash/3954A7C4-51EC-4ABC-ABA3-6757AC91C7CF.png  # 57KB
+/Users/yash/.Trash/d26  # 0B
+/Users/yash/.Trash/DDE50C77-B7CB-4488-9EB1-D1B13BF21FFE.png  # 61KB
+/Users/yash/.Trash/d1 16-25-17-956  # 0B
+/Users/yash/.Trash/d9 16-25-17-954  # 0B
+/Users/yash/.Trash/20261111T010546  # 385KB
+/Users/yash/.Trash/DEA50CAA-A41B-4885-BFDC-6462D6F3C62F.png  # 53KB
+/Users/yash/.Trash/d10  # 0B
+/Users/yash/.Trash/d28  # 0B
+/Users/yash/.Trash/d17  # 0B
+/Users/yash/.Trash/C51F373D-0DB0-4EB6-8693-2EFD1C191DEA.png  # 33KB
+/Users/yash/.Trash/d59 16-25-17-948  # 0B
+/Users/yash/.Trash/CE279831-1CA7-4A83-A97B-FF1E20234396.png  # 57KB
+/Users/yash/.Trash/com.apple.parsecd  # 0B
+/Users/yash/.Trash/Cache_Data  # 37KB
+/Users/yash/.Trash/com.apple.nsservicescache.plist  # 16KB
+/Users/yash/.Trash/d30 16-25-17-931  # 0B
+/Users/yash/.Trash/F9F918CD-E15F-4F01-A326-84A44650C5C9.png  # 41KB
+/Users/yash/.Trash/C6AECFD2-A365-4504-9E2C-F86343F9421F.png  # 123KB
+/Users/yash/.Trash/29A85ABC-196E-40E5-BFCC-498CFF39E956.png  # 57KB
+/Users/yash/.Trash/d51 16-25-17-944  # 0B
+/Users/yash/.Trash/d3  # 0B
+/Users/yash/.Trash/d19 16-25-17-923  # 0B
+/Users/yash/.Trash/2F72BC1E-3D76-456C-81EB-842EBA488C27.png  # 33KB
+/Users/yash/.Trash/d7 16-25-17-995  # 0B
+/Users/yash/.Trash/C4D7742E-0500-4100-A36A-58B9BDAC4495.png  # 45KB
+/Users/yash/.Trash/d11 16-25-17-919  # 0B
+/Users/yash/.Trash/03EC0F5E-CCA8-4E0A-9FEC-5BD1CE151182.png  # 37KB
+/Users/yash/.Trash/d5 16-25-17-983  # 0B
+/Users/yash/.Trash/d4  # 0B
+/Users/yash/.Trash/d2 16-25-17-924  # 0B
+/Users/yash/.Trash/2B30E324-E4FF-4CC1-BA45-A958C2D2B2EC.png  # 57KB
+/Users/yash/.Trash/6D6834A4-2F0F-479A-B053-7D4DC5CB8EB7.png  # 74KB
+/Users/yash/.Trash/FE876489-CBD5-479B-A8F0-1B67F0741CEA.png  # 49KB
+/Users/yash/.Trash/8A51AAE4-6ED6-432B-A222-4081D1F29D24.png  # 45KB
+/Users/yash/.Trash/F07CC61B-30FC-4614-BDAD-3240B61F6793.png  # 57KB
+/Users/yash/.Trash/12718607-0FE6-4B8C-B571-A320CDD67897.png  # 45KB
+/Users/yash/.Trash/94DAB450-A650-4DFC-99B2-A0F0D8AD6649.png  # 45KB
+/Users/yash/.Trash/com.apple.bird  # 0B
+/Users/yash/.Trash/PHTPhenotype  # 33KB
+/Users/yash/.Trash/d62 16-25-17-991  # 0B
+/Users/yash/.Trash/d35 16-25-17-974  # 0B
+/Users/yash/.Trash/81CA5ACD-E682-4D8B-A948-0F147EB6ED4F.png  # 61KB
+/Users/yash/.Trash/d8 16-25-17-996  # 0B
+/Users/yash/.Trash/d5  # 0B
+/Users/yash/.Trash/20261109T195251  # 119KB
+/Users/yash/.Trash/29BDF297-EB43-403A-8719-A78DA11A2948.png  # 37KB
+/Users/yash/.Trash/d22 16-25-17-964  # 0B
+/Users/yash/.Trash/A5AAFF5D-8887-42BB-8AFD-867EF557ED85.png  # 57KB
+/Users/yash/.Trash/876D51F4-3D78-4221-8AD2-F9E78C0FD9B9.png  # 61KB
+/Users/yash/.Trash/d2  # 0B
+/Users/yash/.Trash/E487C6EF-B3FB-427B-A2BE-8CBA60F902F0.png  # 45KB
+/Users/yash/.Trash/82175C1F-153C-4EC8-AE37-2860EA828004.png  # 66KB
+/Users/yash/.Trash/astx-jp.vscode-pptx-viewer-0.2.0  # 483KB
+/Users/yash/.Trash/3BA0CFC7-E460-4B59-A817-B97F9EBB9B89.png  # 53KB
+/Users/yash/.Trash/0FA98CA1-0005-4C98-8DCF-8BE7A6B159CE.png  # 41KB
+/Users/yash/.Trash/92E48DE9-13A1-4172-B560-29B4668A87EE.png  # 53KB
+/Users/yash/.Trash/d41 16-25-17-938  # 0B
+/Users/yash/.Trash/d56 16-25-17-987  # 0B
+/Users/yash/.Trash/47BC0599-72E7-43C4-8BE1-CBCE2432E2A5.png  # 57KB
+/Users/yash/.Trash/d8 16-25-17-954  # 0B
+/Users/yash/.Trash/d0 16-25-17-956  # 0B
+/Users/yash/.Trash/.zsh-update  # 4KB
+/Users/yash/.Trash/d27 16-25-17-928  # 0B
+/Users/yash/.Trash/EE533FBD-90AE-419A-AD13-D7A60E2015D6.png  # 41KB
+/Users/yash/.Trash/index  # 266KB
+/Users/yash/.Trash/d44 16-25-17-980  # 0B
+/Users/yash/.Trash/Retired  # 8KB
+/Users/yash/.Trash/d65 16-25-17-952  # 0B
+/Users/yash/.Trash/METADATA 16-25-17-955  # 0B
+/Users/yash/.Trash/00BA71CD-2C54-415A-A68A-8358E677D750.png  # 41KB
+/Users/yash/.Trash/0F9F6311-65C9-45AE-AB0F-D43B84AE1BB2.png  # 53KB
+/Users/yash/.Trash/C46DA2B2-B569-48B3-94DC-EA5FE1687831.png  # 49KB
+/Users/yash/.Trash/d41 16-25-17-978  # 0B
+/Users/yash/.Trash/81D2C1A9-4E73-4BA0-B62B-86F4B5FE4A12.png  # 37KB
+/Users/yash/.Trash/d46 16-25-17-940  # 0B
+/Users/yash/.Trash/1A17ED86-9E0D-4DF2-8CF3-5AB5DB67A348.png  # 53KB
+/Users/yash/.Trash/C8559883-6F3E-4AF2-8960-903710CD47B7.png  # 45KB
+/Users/yash/.Trash/d49 16-25-17-942  # 0B
+/Users/yash/.Trash/d19 16-25-17-962  # 0B
+/Users/yash/.Trash/d16 16-25-17-960  # 0B
+/Users/yash/.Trash/27A37B0F-738D-4644-A7A4-E33E7A6C1175.png  # 41KB
+/Users/yash/.Trash/2EE1E203-F351-429F-80A6-68F9996D9CCC.png  # 53KB
+/Users/yash/.Trash/7DBD8ADE-4342-47E8-85CE-05853F0B79DB.png  # 66KB
+/Users/yash/.Trash/4AD99907-9E76-408D-A7FC-8429FF014201.png  # 41KB
+/Users/yash/.Trash/d53 16-25-17-985  # 0B
+/Users/yash/.Trash/12E0343D-2CD9-48EA-AB57-4D680FB6D0C7.png  # 53KB
+/Users/yash/.Trash/52ACB9B8-75FC-4516-BC60-4550CFF3B661.png  # 45KB
+/Users/yash/.Trash/No_Vary_Search  # 8KB
+/Users/yash/.Trash/d32 16-25-17-932  # 0B
+/Users/yash/.Trash/2B044BC4-2E4F-4153-B951-66E5F8EA2C60.png  # 57KB
+/Users/yash/.Trash/737E9E24-49BE-4104-9B72-F352DE1AD2BF.png  # 45KB
+/Users/yash/.Trash/B876B645-3955-420E-99DF-60139E451CF3.png  # 57KB
+/Users/yash/.Trash/3FD9FD5C-6DC5-4362-9932-4087C942F1C5.png  # 49KB
+/Users/yash/.Trash/d11 16-25-17-957  # 0B
+/Users/yash/.Trash/4DFE24ED-71CC-42D4-9FE8-3B8959B6CC19.png  # 131KB
+/Users/yash/.Trash/5EC10725-2C87-4B6B-98EA-B271AE69782D.png  # 53KB
+/Users/yash/.Trash/A63179A7-BC32-4307-89F0-112694889A03.png  # 45KB
+/Users/yash/.Trash/4109D42A-D717-46A7-A9A2-FE53A82B25C0.png  # 53KB
+/Users/yash/.Trash/d0 16-25-17-917  # 0B
+/Users/yash/.Trash/20261111T120951  # 274KB
+/Users/yash/.Trash/82BD33C9-B6D2-47E7-9C42-AA3B7758921A.png  # 37KB
+/Users/yash/.Trash/8A57476A-E177-4AAD-B317-643F681584E1.png  # 49KB
+/Users/yash/.Trash/d35 16-25-17-934  # 0B
+/Users/yash/.Trash/d2 16-25-17-963  # 0B
+/Users/yash/.Trash/d54 16-25-17-946  # 0B
+/Users/yash/.Trash/d27 16-25-17-967  # 0B
+/Users/yash/.Trash/node_modules 16-25-17-825  # 4.3MB
+/Users/yash/.Trash/989909D1-AEFC-4BE5-9249-ABFBA5CABED0.png  # 147KB
+/Users/yash/.Trash/17647EAB-8357-48B0-BCD6-B892194267C5.png  # 131KB
+/Users/yash/.Trash/6623FD45-2067-4621-B622-8B3539321CE2.png  # 41KB
+/Users/yash/.Trash/149E7795-DBDA-4F5D-B39A-14712F841118.png  # 57KB
+/Users/yash/.Trash/d35  # 0B
+/Users/yash/.Trash/d32  # 0B
+/Users/yash/.Trash/009BA758-7060-4479-8EE8-FB9B40C8FB97.png  # 45KB
+/Users/yash/.Trash/d33 16-25-17-932  # 0B
+/Users/yash/.Trash/E78A47DC-A4D3-45AE-A299-01D1FE30CE76.png  # 49KB
+/Users/yash/.Trash/d52 16-25-17-985  # 0B
+/Users/yash/.Trash/20261111T113632  # 160KB
+/Users/yash/.Trash/d6 16-25-17-989  # 0B
+/Users/yash/.Trash/com.apple.AgentCanvasUICore  # 0B
+/Users/yash/.Trash/d48 16-25-17-942  # 0B
+/Users/yash/.Trash/METADATA  # 0B
+/Users/yash/.Trash/d57  # 0B
+/Users/yash/.Trash/d31 16-25-17-970  # 0B
+/Users/yash/.Trash/3E94AE98-EAF2-4B09-96E3-452F46BC114E.png  # 41KB
+/Users/yash/.Trash/B9372246-0690-4CF0-93C8-71C0FCB67C07.png  # 61KB
+/Users/yash/.Trash/9680B8EB-CE2A-4395-AF41-402801F4D6A6.png  # 45KB
+/Users/yash/.Trash/d50  # 0B
+/Users/yash/.Trash/3819CF22-1F17-48F0-8363-5BB78BC25EE8.png  # 45KB
+/Users/yash/.Trash/d59  # 0B
+/Users/yash/.Trash/d29 16-25-17-930  # 0B
+/Users/yash/.Trash/731140AB-82EF-47B5-B62C-285BA7E112FD.png  # 123KB
+/Users/yash/.Trash/d66  # 0B
+/Users/yash/.Trash/data_2  # 8KB
+/Users/yash/.Trash/F604AF56-EA77-4960-AEF7-82533CC1A8B3.png  # 41KB
+/Users/yash/.Trash/d18 16-25-17-962  # 0B
+/Users/yash/.Trash/E5DB138A-F04E-4619-B896-DE5CB538C534.png  # 41KB
+/Users/yash/.Trash/d61  # 0B
+/Users/yash/.Trash/20261110T124811  # 213KB
+/Users/yash/.Trash/d61 16-25-17-950  # 0B
+/Users/yash/.Trash/com.apple.sprocket.menucache  # 4KB
+/Users/yash/.Trash/27259F68-CD60-4800-8754-56888FBEBC78.png  # 45KB
+/Users/yash/.Trash/8D04D70F-738B-441D-8D43-AF46B2BF8062.png  # 53KB
+/Users/yash/.Trash/d34 16-25-17-933  # 0B
+/Users/yash/.Trash/com.apple.tiswitcher.cache  # 0B
+/Users/yash/.Trash/D5CFB2FF-5F8C-4637-816B-3E42FC1229B8.png  # 49KB
+/Users/yash/.Trash/com.apple.amsengagementd  # 553KB
+/Users/yash/.Trash/com.apple.iTunesCloud  # 0B
+/Users/yash/.Trash/100858D2-FE01-4B70-8E2D-3FCF20AFE6B5.png  # 49KB
+/Users/yash/.Trash/58C75C62-3290-47B8-849C-56A583173570.png  # 53KB
+/Users/yash/.Trash/97C3047F-ED39-472C-9778-CABF25D8682D.png  # 49KB
+/Users/yash/.Trash/d33  # 0B
+/Users/yash/.Trash/4E9FE515-65B1-4677-B1A0-CAB75BDA1480.png  # 49KB
+/Users/yash/.Trash/d34  # 0B
+/Users/yash/.Trash/d26 16-25-17-967  # 0B
+/Users/yash/.Trash/CE9B5D5B-B6E7-47C5-8C04-59BF182E98FB.png  # 37KB
+/Users/yash/.Trash/73120738-3D8D-47E7-B6E9-8AAC4D352577.png  # 66KB
+/Users/yash/.Trash/94383DC9-59D3-43EC-9E8E-A783DA633E06.png  # 152KB
+/Users/yash/.Trash/d55 16-25-17-946  # 0B
+/Users/yash/.Trash/data_3  # 4.2MB
+/Users/yash/.Trash/d40 16-25-17-977  # 0B
+/Users/yash/.Trash/d60  # 0B
+/Users/yash/.Trash/d3 16-25-17-930  # 0B
+/Users/yash/.Trash/d17 16-25-17-961  # 0B
+/Users/yash/.Trash/d58  # 0B
+/Users/yash/.Trash/d4 16-25-17-937  # 0B
+/Users/yash/.Trash/23850E78-D69D-48EB-9F5C-DC2319D238D5.png  # 33KB
+/Users/yash/.Trash/3C4678E4-4D3D-4A40-8817-77752AEA62EB.png  # 53KB
+/Users/yash/.Trash/F9518D54-04A7-4793-8666-CFC114D73CE5.png  # 53KB
+/Users/yash/.Trash/d1 16-25-17-917  # 0B
+/Users/yash/.Trash/d47 16-25-17-941  # 0B
+/Users/yash/.Trash/9FF02693-AA7B-4D36-8027-B0BBA87FEE53.png  # 45KB
+/Users/yash/.Trash/4F3A44DF-CB0B-473D-8BE3-E795F0CE8F58.png  # 53KB
+/Users/yash/.Trash/d51  # 0B
+/Users/yash/.Trash/com.anthropic.claudefordesktop.ShipIt  # 0B
+/Users/yash/.Trash/d10 16-25-17-957  # 0B
+/Users/yash/.Trash/d66 16-25-17-994  # 0B
+/Users/yash/.Trash/7C6A4BFE-F9F3-48E2-A2D7-BE34A04DB354.png  # 61KB
+/Users/yash/.Trash/d56  # 0B
+
+=== App caches ===
+/Users/yash/Library/Containers/com.apple.geod/Data/tmp/1650FB38-2194-482A-B1DA-50CE582EF163  # 0B
+/Users/yash/Library/Containers/com.apple.geod/Data/tmp/36E282D9-B101-4F1E-9993-77055F8C65D6  # 0B
+/Users/yash/Library/Containers/com.apple.geod/Data/tmp/6161F28F-E0A7-4CB1-9C39-5EB9974567AA  # 0B
+/Users/yash/Library/Containers/com.apple.geod/Data/tmp/6ED98251-456B-4CE0-BF47-5321CC0289FE  # 336KB
+/Users/yash/Library/Containers/com.apple.geod/Data/tmp/TemporaryItems  # 0B
+/Users/yash/Library/Caches/com.apple.AppleMediaServices/Engagement  # 451KB
+/Users/yash/Library/Caches/com.apple.AppleMediaServices/Metrics  # 430KB
+
+=== Developer tools ===
+/Users/yash/.cache/uv/sdists-v10  # 0B
+
+# ============================================
+# Summary
+# ============================================
+# Potential cleanup: 190.8MB
+# Items: 511
+# Categories: 3
