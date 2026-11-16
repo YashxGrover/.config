@@ -1,7 +1,7 @@
 {
   "default" : true,
   "format" : 34,
-  "id" : "298C44A1-E85A-4814-80E4-570F9F9930E6",
+  "id" : "802836FB-B147-497E-9102-0FCA3E6EB26D",
   "main_spaces" : [
     "1",
     "3"
@@ -16,8 +16,8 @@
       }
     }
   ],
-  "name" : "Profile 1",
-  "saved_at" : "2026-11-12T13:45:47Z",
+  "name" : "Assist",
+  "saved_at" : "2026-11-13T15:19:25Z",
   "settings" : {
     "animations" : {
       "duration" : 50,
@@ -36,18 +36,18 @@
       "active_indicator" : "edge_mark",
       "edge" : "right",
       "group_adjacent_windows" : true,
-      "reserve" : true,
+      "reserve" : false,
       "title_cap" : 10
     },
     "border" : {
       "corner_style" : "rounded",
       "draw_order" : "behind",
       "enabled" : true,
-      "focused_color" : "#30D158FF",
+      "focused_color" : "#fab387",
       "glow" : true,
       "glow_size" : 0,
       "sheen" : 0,
-      "unfocused_color" : "#FFFFFF30",
+      "unfocused_color" : "#a6adc840",
       "unfocused_enabled" : true,
       "width" : 2
     },
@@ -76,7 +76,7 @@
           "bottom" : 0,
           "left" : 0,
           "right" : 0,
-          "top" : 0
+          "top" : 11
         }
       },
       "override" : {
@@ -84,7 +84,7 @@
       }
     },
     "kiwishelf" : {
-      "active_item_color" : "#FFFFFFFF",
+      "active_item_color" : "#fab387",
       "alignment" : "start",
       "background_fit" : "full",
       "background_style" : "plain",
@@ -93,7 +93,7 @@
       "border_width" : 2,
       "corner_roundness" : 14,
       "dim_factor" : 0.75,
-      "fill_color" : "#0A0A0AFA",
+      "fill_color" : "#1e1e2eE8",
       "fill_fade" : 100,
       "font_family" : "System Monospaced",
       "font_size" : 20,
@@ -107,7 +107,7 @@
       "hover_item_color" : "#FFFFFFFF",
       "icon_source" : "app_image",
       "inner_margin" : 0,
-      "item_color" : "#FFFFFFFF",
+      "item_color" : "#cdd6f4",
       "item_gap" : 4,
       "liquid_glass" : false,
       "minimum" : 30,
@@ -115,7 +115,7 @@
       "outer_margin" : 0,
       "pocket_edge" : "right",
       "pocket_position" : 14,
-      "pocket_visibility" : "always",
+      "pocket_visibility" : "hidden",
       "reading_contrast" : 4.5,
       "reveal_style" : "fade",
       "reveal_timeout" : 0,
@@ -140,7 +140,7 @@
       },
       "monocle" : {
         "app_bar" : {
-          "visibility" : "always"
+          "visibility" : "hidden"
         },
         "hide_style" : "stack",
         "new_window_placement" : "first",
@@ -149,7 +149,7 @@
       "scroll" : {
         "anchor" : "follow",
         "app_bar" : {
-          "visibility" : "always"
+          "visibility" : "hidden"
         },
         "fill_when_alone" : true,
         "new_window_placement" : "after_focused",
@@ -317,7 +317,7 @@
 
     },
     "pocket" : {
-      "color" : "#FFFFFFFF"
+      "color" : "#fab387"
     },
     "resize" : {
       "step" : 50
@@ -336,8 +336,8 @@
       "active_dim_factor" : 0.6,
       "active_indicator" : "edge_mark",
       "edge" : "right",
-      "focused_highlight_color" : "#FFFFFFFF",
-      "focused_item_color" : "#FFFFFFFF",
+      "focused_highlight_color" : "#fab387",
+      "focused_item_color" : "#fab387",
       "front_app_title_cap" : 10,
       "glyph_gap" : 0,
       "glyph_span" : 5,
@@ -345,11 +345,11 @@
       "hide_empty" : false,
       "inactive_content" : "apps",
       "item_label" : "identifier",
-      "reserve" : true,
+      "reserve" : false,
       "show_front_app" : false,
       "spring_delay" : 1500,
       "sticky_badge" : true,
-      "visibility" : "always"
+      "visibility" : "hidden"
     },
     "sticky" : {
       "color" : "",
@@ -362,12 +362,16 @@
   "space_modes" : {
     "1" : "monocle",
     "2" : "monocle",
-    "3" : "bsp"
+    "3" : "monocle",
+    "4" : "monocle",
+    "5" : "monocle"
   },
   "spaces" : [
     "1",
     "2",
-    "3"
+    "3",
+    "4",
+    "5"
   ],
-  "starter_setup" : true
+  "starter_setup" : false
 }

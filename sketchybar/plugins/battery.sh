@@ -14,4 +14,4 @@ COLOR=$GREEN
 [ "$PCT" -le 40 ] && COLOR=$YELLOW
 [ "$PCT" -le 20 ] && COLOR=$RED
 echo "$INFO" | grep -q 'AC Power' && ICON="$ICON_BOLT"
-sketchybar --set "$NAME" icon="$ICON" icon.color=$COLOR label="${PCT}%"
+sketchybar --set "$NAME" icon="$ICON" icon.color=$COLOR label.color=$COLOR label="${PCT}%"

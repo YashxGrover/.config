@@ -1,0 +1,83 @@
+<style>
+#bar-options { --ink:#dce5f4; --muted-ink:#99a8c1; font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif; }
+#bar-options .stage { height:340px; position:relative; overflow:hidden; background:radial-gradient(ellipse at 65% 95%,#3f3561,transparent 65%),linear-gradient(145deg,#101824,#27334b); border-radius:10px; color:var(--ink); padding:14px; box-sizing:border-box; }
+#bar-options .bar { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; min-height:38px; background:#111923; color:var(--ink); padding:0 12px; font-size:14px; box-sizing:border-box; position:relative; z-index:2; }
+#bar-options .group { display:flex;align-items:center;flex-wrap:wrap;gap:12px; }
+#bar-options .group span,#bar-options .group button { white-space:nowrap; }
+#bar-options .apple { font-size:21px; color:var(--design-accent); }
+#bar-options .app { font-weight:600; }
+#bar-options .meta { color:var(--muted-ink); }
+#bar-options .space { color:var(--design-accent); }
+#bar-options .bar button { font:inherit; color:inherit; background:none; border:0; padding:8px 0; cursor:pointer; }
+#bar-options .bar .resource { color:var(--design-accent); }
+#bar-options .bar svg { width:15px;height:15px;vertical-align:middle; }
+#bar-options .glass .bar { background:#121b2bd9; border-bottom:1px solid #ffffff15; box-shadow:0 8px 24px #00000025; }
+#bar-options .slate .stage { background:linear-gradient(135deg,#293342,#495466); }
+#bar-options .slate .bar { background:#343f51; gap:6px; padding:0; }
+#bar-options .slate .group { gap:3px; }
+#bar-options .slate .group>span,#bar-options .slate .bar button { padding:8px 9px; background:#465267; }
+#bar-options .slate .bar .space { background:var(--design-accent);color:#14202e; }
+#bar-options .split .bar { background:transparent;padding:0;gap:10px; }
+#bar-options .split .group { background:#101722; padding:0 12px;min-height:38px;border-radius:5px;gap:10px; }
+#bar-options .rail .bar { background:#111924;border-bottom:2px solid var(--design-accent); }
+#bar-options .rail .space { border-bottom:2px solid var(--design-accent);padding:10px 0; }
+#bar-options .floating .bar { margin:5px 12px; border-radius:7px; background:#151a2af2;box-shadow:0 10px 28px #00000050;padding:3px 16px; }
+#bar-options .minimal .bar { background:#101820b8; }
+#bar-options .minimal .resource {color:var(--muted-ink);}
+#bar-options .window { position:absolute;left:10%;right:10%;top:125px;height:150px;background:#131b29db;border:1px solid #ffffff10;border-radius:9px;box-shadow:0 18px 55px #00000030; }
+#bar-options .titlebar { height:33px;display:flex;align-items:center;padding:0 14px;gap:6px;border-bottom:1px solid #ffffff0b; }
+#bar-options .dot {width:7px;height:7px;border-radius:50%;background:#596278;}
+#bar-options .line {height:5px;background:#354257;border-radius:2px;margin:15px 22px;width:48%;}
+#bar-options .line.short {width:29%;background:#273a47;}
+#bar-options .caption {position:absolute;bottom:20px;left:24px;color:#bdc9db;font-size:12px;}
+#bar-options .details { display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 2px;color:light-dark(#263245,#d7dfed);font-size:14px; }
+#bar-options .details strong {display:block;font-weight:500;margin-bottom:4px;}
+#bar-options .details small {color:light-dark(#52627a,#9caac0);font-size:12px;}
+#bar-options .choose {font:inherit;background:light-dark(#172337,#dee7f5);color:light-dark(#ffffff,#152035);border:0;border-radius:6px;padding:9px 13px;white-space:nowrap;cursor:pointer;}
+#bar-options .popup {position:absolute;right:10px;top:55px;z-index:5;width:290px;background:#1b2434;color:#dce5f4;border:1px solid #43506a;padding:16px;border-radius:7px;box-shadow:0 10px 32px #0007;font-size:13px;}
+#bar-options .popup[hidden] {display:none;}
+#bar-options .popup header {font-weight:600;margin-bottom:12px;}
+#bar-options .process {display:flex;justify-content:space-between;margin:9px 0;}
+#bar-options .popup footer {font-size:11px;color:#a1afc5;margin-top:14px;}
+#bar-options .selection {font-size:13px;color:light-dark(#37475f,#b9c7db);min-height:18px;}
+@media(max-width:700px){#bar-options .stage{height:390px;}#bar-options .bar{gap:3px;padding:5px 8px;}#bar-options .group{gap:9px;}#bar-options .window{top:190px;height:130px;}#bar-options .floating .bar{margin:0;}#bar-options .details{align-items:flex-start;}#bar-options .popup{top:145px;max-width:calc(100% - 54px);} }
+</style>
+<div id="bar-options" class="viz-carousel viz-dotted-background" aria-label="SketchyBar design options">
+<section data-variant="Obsidian Glass" class="glass" style="--design-accent:#8ed8e6">
+<div class="stage" aria-label="Obsidian Glass bar preview"><div class="bar"><div class="group"><span class="apple"></span><span class="app">ChatGPT</span><span class="meta">Desktop 1</span><span class="space">Space 2</span><span class="meta">Monocle</span></div><div class="group"><button class="resource" data-popup>CPU 7%</button><span class="resource">GPU 3%</span><span class="resource">RAM 51%</span><span><i data-lucide="wifi"></i></span><span><i data-lucide="volume-2"></i></span><span>86% <i data-lucide="battery"></i></span><span>20:42</span></div></div><div class="window" aria-hidden="true"><div class="titlebar"><b class="dot"></b><b class="dot"></b><b class="dot"></b></div><div class="line"></div><div class="line short"></div><div class="line"></div></div><div class="caption">Continuous smoky glass · cyan accents · no individual icon boxes</div></div>
+<div class="details"><div><strong>Obsidian Glass · recommended</strong><small>Native spacing, restrained color, clear hierarchy.</small></div><button class="choose" data-choose>Choose this</button></div></section>
+<section data-variant="Slate Segments" class="slate" style="--design-accent:#93c4dd" hidden>
+<div class="stage" aria-label="Slate Segments bar preview"><div class="bar"><div class="group"><span class="apple"></span><span class="app">ChatGPT</span><span class="meta">Desktop 1</span><span class="space">Space 2</span><span class="meta">Monocle</span></div><div class="group"><button class="resource" data-popup>CPU 7%</button><span>GPU 3%</span><span>RAM 51%</span><span><i data-lucide="wifi"></i> 86%</span><span>20:42</span></div></div><div class="window" aria-hidden="true"><div class="titlebar"><b class="dot"></b><b class="dot"></b><b class="dot"></b></div><div class="line"></div><div class="line short"></div></div><div class="caption">Flat rectangular sections · blue-gray palette · reference-inspired</div></div>
+<div class="details"><div><strong>Slate Segments</strong><small>Most closely follows ssate’s rectangular grouping.</small></div><button class="choose" data-choose>Choose this</button></div></section>
+<section data-variant="Split Studio" class="split" style="--design-accent:#c7b1f5" hidden>
+<div class="stage" aria-label="Split Studio bar preview"><div class="bar"><div class="group"><span class="apple"></span><span class="app">ChatGPT</span><span class="meta">Desktop 1</span><span class="space">Space 2</span><span class="meta">Monocle</span></div><div class="group"><button class="resource" data-popup>CPU 7%</button><span>GPU 3%</span><span>RAM 51%</span></div><div class="group"><span><i data-lucide="wifi"></i></span><span>86% <i data-lucide="battery"></i></span><span>20:42</span></div></div><div class="window" aria-hidden="true"><div class="titlebar"><b class="dot"></b><b class="dot"></b><b class="dot"></b></div><div class="line"></div><div class="line short"></div></div><div class="caption">Three separated sections · wallpaper visible between groups</div></div>
+<div class="details"><div><strong>Split Studio</strong><small>App/navigation, resources, and system controls in three groups.</small></div><button class="choose" data-choose>Choose this</button></div></section>
+<section data-variant="Accent Rail" class="rail" style="--design-accent:#eeb68f" hidden>
+<div class="stage" aria-label="Accent Rail bar preview"><div class="bar"><div class="group"><span class="apple"></span><span class="app">ChatGPT</span><span class="meta">Desktop 1</span><span class="space">Space 2</span><span class="meta">Monocle</span></div><div class="group"><button class="resource" data-popup>CPU 7%</button><span>GPU 3%</span><span>RAM 51%</span><span><i data-lucide="wifi"></i></span><span>86%</span><span>20:42</span></div></div><div class="window" aria-hidden="true"><div class="titlebar"><b class="dot"></b><b class="dot"></b><b class="dot"></b></div><div class="line"></div><div class="line short"></div></div><div class="caption">One continuous accent line · underlined active Space · crisp edges</div></div>
+<div class="details"><div><strong>Accent Rail</strong><small>A stronger visual signature without outlined icons.</small></div><button class="choose" data-choose>Choose this</button></div></section>
+<section data-variant="Floating Ribbon" class="floating" style="--design-accent:#a4d9b3" hidden>
+<div class="stage" aria-label="Floating Ribbon bar preview"><div class="bar"><div class="group"><span class="apple"></span><span class="app">ChatGPT</span><span class="meta">D1</span><span class="space">S2</span><span class="meta">Monocle</span></div><div class="group"><button class="resource" data-popup>CPU 7%</button><span>GPU 3%</span><span>RAM 51%</span><span><i data-lucide="wifi"></i></span><span>86%</span><span>20:42</span></div></div><div class="window" aria-hidden="true"><div class="titlebar"><b class="dot"></b><b class="dot"></b><b class="dot"></b></div><div class="line"></div><div class="line short"></div></div><div class="caption">One inset ribbon · subtle shadow · softly rounded outer bar only</div></div>
+<div class="details"><div><strong>Floating Ribbon</strong><small>More separation from the screen edge, with compact desktop labels.</small></div><button class="choose" data-choose>Choose this</button></div></section>
+<section data-variant="Focus Minimal" class="minimal" style="--design-accent:#deb5f0" hidden>
+<div class="stage" aria-label="Focus Minimal bar preview"><div class="bar"><div class="group"><span class="apple"></span><span class="app">ChatGPT</span><span class="meta">D1</span><span class="space">S2</span><span class="meta">Monocle</span></div><div class="group"><button class="resource" data-popup><i data-lucide="activity"></i> System</button><span><i data-lucide="wifi"></i></span><span>86% <i data-lucide="battery"></i></span><span>20:42</span></div></div><div class="window" aria-hidden="true"><div class="titlebar"><b class="dot"></b><b class="dot"></b><b class="dot"></b></div><div class="line"></div><div class="line short"></div></div><div class="caption">Resources tucked into one System popup · maximum breathing room</div></div>
+<div class="details"><div><strong>Focus Minimal</strong><small>Quietest option; CPU/GPU/RAM appear after clicking System.</small></div><button class="choose" data-choose>Choose this</button></div></section>
+</div>
+<script>
+(function(){
+ const root=document.getElementById('bar-options');
+ root.querySelectorAll('section[data-variant]').forEach(section=>{
+  const stage=section.querySelector('.stage');
+  const popup=document.createElement('div');popup.className='popup';popup.hidden=true;popup.setAttribute('role','status');
+  popup.innerHTML='<header>CPU · top processes</header><div class="process"><span>WindowServer</span><span>12.4%</span></div><div class="process"><span>ChatGPT</span><span>8.1%</span></div><div class="process"><span>Safari</span><span>4.6%</span></div><footer>Illustrative values · not live readings</footer>';
+  stage.append(popup);
+  section.querySelector('[data-popup]').addEventListener('click',()=>{popup.hidden=!popup.hidden;});
+  section.querySelector('[data-choose]').addEventListener('click',async()=>{
+   const name=section.dataset.variant;
+   if(window.openai?.sendFollowUpMessage){await window.openai.sendFollowUpMessage({prompt:'Use the '+name+' SketchyBar design. Keep my existing functionality and implement this layout.',title:'Choose '+name});}
+   else {section.querySelector('.choose').textContent='Selected: '+name;}
+  });
+  const state={accent:section.style.getPropertyValue('--design-accent')};
+  if(globalThis.Tweak){const tweak=new Tweak({container:stage,onChange:()=>section.style.setProperty('--design-accent',state.accent)});tweak.addColorPicker(state,'accent',{label:'Accent',reference:'--design-accent'});}
+ });
+})();
+</script>

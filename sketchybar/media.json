@@ -1,0 +1,7 @@
+{
+  "source": "spotify",
+  "external": {
+    "metadata_argv": [],
+    "play_pause_argv": []
+  }
+}

@@ -1,0 +1,435 @@
+{
+  "app_rules" : {
+
+  },
+  "desktop" : {
+    "cue" : true
+  },
+  "float_automatically" : true,
+  "float_rules" : [
+
+  ],
+  "focus_wrap" : "all_screens",
+  "format" : 19,
+  "hyper" : {
+    "key" : "off"
+  },
+  "ignore_rules" : [
+
+  ],
+  "kiwihub" : {
+    "key" : {
+
+    }
+  },
+  "kiwivision" : {
+    "appearance" : "unchanged",
+    "blur" : true,
+    "clear_app" : false,
+    "clear_wallpaper" : false,
+    "dim" : 60,
+    "fade_curve" : "ease_out",
+    "fade_duration" : 300,
+    "lenses" : [
+
+    ],
+    "never_dimmed" : [
+
+    ]
+  },
+  "layers" : [
+    {
+      "bindings" : [
+        {
+          "combo" : "control+option+b",
+          "desc" : "SketchyBar mode",
+          "kind" : "custom",
+          "label" : "",
+          "lua" : "KiwiDesk.exec(os.getenv(\"HOME\") .. \"\/.config\/sketchybar\/plugins\/mode_sketchybar.sh\")"
+        },
+        {
+          "combo" : "control+option+n",
+          "desc" : "macOS menu bar mode",
+          "kind" : "custom",
+          "label" : "",
+          "lua" : "KiwiDesk.exec(os.getenv(\"HOME\") .. \"\/.config\/sketchybar\/plugins\/mode_macos.sh\")"
+        },
+        {
+          "combo" : "control+option+t",
+          "desc" : "Open kitty",
+          "kind" : "custom",
+          "label" : "",
+          "lua" : "KiwiDesk.exec(\"open -a kitty\")"
+        },
+        {
+          "combo" : "control+option+o",
+          "desc" : "Open Obsidian",
+          "kind" : "custom",
+          "label" : "",
+          "lua" : "KiwiDesk.exec(\"open -a Obsidian\")"
+        },
+        {
+          "combo" : "control+option+v",
+          "desc" : "Open VS Code",
+          "kind" : "custom",
+          "label" : "",
+          "lua" : "KiwiDesk.exec(\"open -a 'Visual Studio Code'\")"
+        },
+        {
+          "combo" : "option+1",
+          "kind" : "navigation",
+          "label" : "Go to Desktop 1",
+          "lua" : "KiwiDesk.focus_desktop(1)"
+        },
+        {
+          "combo" : "option+2",
+          "kind" : "navigation",
+          "label" : "Go to Desktop 2",
+          "lua" : "KiwiDesk.focus_desktop(2)"
+        },
+        {
+          "combo" : "option+3",
+          "kind" : "navigation",
+          "label" : "Go to Desktop 3",
+          "lua" : "KiwiDesk.focus_desktop(3)"
+        },
+        {
+          "combo" : "option+4",
+          "kind" : "navigation",
+          "label" : "Go to Desktop 4",
+          "lua" : "KiwiDesk.focus_desktop(4)"
+        },
+        {
+          "combo" : "option+5",
+          "kind" : "navigation",
+          "label" : "Go to Desktop 5",
+          "lua" : "KiwiDesk.focus_desktop(5)"
+        },
+        {
+          "combo" : "option+6",
+          "kind" : "navigation",
+          "label" : "Go to Desktop 6",
+          "lua" : "KiwiDesk.focus_desktop(6)"
+        },
+        {
+          "combo" : "option+7",
+          "kind" : "navigation",
+          "label" : "Go to Desktop 7",
+          "lua" : "KiwiDesk.focus_desktop(7)"
+        },
+        {
+          "combo" : "control+period",
+          "kind" : "navigation",
+          "label" : "Next layout",
+          "lua" : "KiwiDesk.cycle_mode()"
+        },
+        {
+          "combo" : "control+comma",
+          "kind" : "navigation",
+          "label" : "Previous layout",
+          "lua" : "KiwiDesk.cycle_mode(\"prev\")"
+        },
+        {
+          "combo" : "control+f",
+          "kind" : "navigation",
+          "label" : "Maximize",
+          "lua" : "KiwiDesk.toggle_maximized()"
+        },
+        {
+          "combo" : "control+semicolon",
+          "kind" : "navigation",
+          "label" : "Toggle floating",
+          "lua" : "KiwiDesk.toggle_floating()"
+        },
+        {
+          "combo" : "control+s",
+          "kind" : "navigation",
+          "label" : "Toggle sticky",
+          "lua" : "KiwiDesk.toggle_sticky()"
+        },
+        {
+          "combo" : "control+p",
+          "kind" : "navigation",
+          "label" : "Pocket or take out",
+          "lua" : "KiwiDesk.pocket()"
+        },
+        {
+          "combo" : "control+1",
+          "kind" : "navigation",
+          "label" : "Go to Space 1",
+          "lua" : "KiwiDesk.focus_space(\"1\")"
+        },
+        {
+          "combo" : "control+2",
+          "kind" : "navigation",
+          "label" : "Go to Space 2",
+          "lua" : "KiwiDesk.focus_space(\"2\")"
+        },
+        {
+          "combo" : "control+3",
+          "kind" : "navigation",
+          "label" : "Go to Space 3",
+          "lua" : "KiwiDesk.focus_space(\"3\")"
+        },
+        {
+          "combo" : "control+shift+1",
+          "kind" : "navigation",
+          "label" : "Move to Space 1",
+          "lua" : "KiwiDesk.move_to_space(\"1\")"
+        },
+        {
+          "combo" : "control+shift+2",
+          "kind" : "navigation",
+          "label" : "Move to Space 2",
+          "lua" : "KiwiDesk.move_to_space(\"2\")"
+        },
+        {
+          "combo" : "control+shift+3",
+          "kind" : "navigation",
+          "label" : "Move to Space 3",
+          "lua" : "KiwiDesk.move_to_space(\"3\")"
+        },
+        {
+          "combo" : "control+option+shift+command+h",
+          "kind" : "navigation",
+          "label" : "Focus window to the left",
+          "lua" : "KiwiDesk.focus(\"left\")"
+        },
+        {
+          "combo" : "control+option+shift+command+l",
+          "kind" : "navigation",
+          "label" : "Focus window to the right",
+          "lua" : "KiwiDesk.focus(\"right\")"
+        },
+        {
+          "combo" : "control+option+shift+command+k",
+          "kind" : "navigation",
+          "label" : "Focus window above",
+          "lua" : "KiwiDesk.focus(\"up\")"
+        },
+        {
+          "combo" : "control+option+shift+command+j",
+          "kind" : "navigation",
+          "label" : "Focus window below",
+          "lua" : "KiwiDesk.focus(\"down\")"
+        },
+        {
+          "combo" : "control+option+shift+command+m",
+          "kind" : "custom",
+          "label" : "",
+          "lua" : "KiwiDesk.cycle_mode(\"next\")"
+        }
+      ],
+      "name" : "default"
+    }
+  ],
+  "look" : {
+    "colors" : {
+      "border.focused_color" : "#fab387",
+      "border.unfocused_color" : "#a6adc840",
+      "floating.color" : "",
+      "kiwishelf.active_item_color" : "#fab387",
+      "kiwishelf.border_color" : "#000000FF",
+      "kiwishelf.fill_color" : "#1e1e2eE8",
+      "kiwishelf.group_badge_color" : "#FFFFFFFF",
+      "kiwishelf.group_badge_text_color" : "#000000FF",
+      "kiwishelf.highlight_color" : "#FFFFFFFF",
+      "kiwishelf.hover_fill_color" : "#FFFFFF1F",
+      "kiwishelf.hover_item_color" : "#FFFFFFFF",
+      "kiwishelf.item_color" : "#cdd6f4",
+      "pocket.color" : "#fab387",
+      "space_bar.focused_highlight_color" : "#fab387",
+      "space_bar.focused_item_color" : "#fab387",
+      "sticky.color" : ""
+    },
+    "origin" : {
+      "author" : "Maikel Hajiabadi",
+      "colors" : {
+        "border.focused_color" : "#FFFFFFFF",
+        "border.unfocused_color" : "#B0B0B040",
+        "floating.color" : "",
+        "kiwishelf.active_item_color" : "#FFFFFFFF",
+        "kiwishelf.border_color" : "#FFFFFFFF",
+        "kiwishelf.fill_color" : "#101314FA",
+        "kiwishelf.group_badge_color" : "#A9CCE3FF",
+        "kiwishelf.group_badge_text_color" : "#101314FF",
+        "kiwishelf.highlight_color" : "#FFFFFFFF",
+        "kiwishelf.hover_fill_color" : "#FFFFFF33",
+        "kiwishelf.hover_item_color" : "#FFFFFFFF",
+        "kiwishelf.item_color" : "#B0B0B0FF",
+        "pocket.color" : "#00D2FFFF",
+        "space_bar.focused_highlight_color" : "#00D2FFFF",
+        "space_bar.focused_item_color" : "#00D2FFFF",
+        "sticky.color" : ""
+      },
+      "gallery_id" : "black-and-white-tiler",
+      "name" : "Black & White Tiler",
+      "style" : {
+        "animations.duration" : 150,
+        "animations.expand_duration" : 500,
+        "animations.on_expand" : true,
+        "animations.on_peek" : true,
+        "animations.on_relayout" : true,
+        "animations.on_scrolling" : true,
+        "animations.on_state_change" : true,
+        "animations.on_window_resize" : true,
+        "animations.on_window_swap" : true,
+        "animations.reveal_duration" : 800,
+        "animations.scroll_duration" : 400,
+        "app_bar.active_indicator" : "edge_mark",
+        "app_bar.edge" : "top",
+        "border.corner_style" : "square",
+        "border.glow" : false,
+        "border.glow_size" : 0,
+        "border.sheen" : 0,
+        "border.width" : 4,
+        "gap.global" : {
+          "inner" : {
+            "horizontal" : 4,
+            "vertical" : 4
+          },
+          "outer" : {
+            "bottom" : 4,
+            "left" : 4,
+            "right" : 4,
+            "top" : 4
+          }
+        },
+        "kiwishelf.alignment" : "start",
+        "kiwishelf.background_fit" : "hug",
+        "kiwishelf.background_style" : "plain",
+        "kiwishelf.border" : true,
+        "kiwishelf.border_width" : 1,
+        "kiwishelf.corner_roundness" : 0,
+        "kiwishelf.dim_factor" : 0.4,
+        "kiwishelf.fill_fade" : 100,
+        "kiwishelf.font_family" : "System Monospaced",
+        "kiwishelf.font_size" : 0,
+        "kiwishelf.font_weight" : 500,
+        "kiwishelf.glyph_size" : 0,
+        "kiwishelf.highlight_width" : 2,
+        "kiwishelf.icon_source" : "app_font",
+        "kiwishelf.inner_margin" : 0,
+        "kiwishelf.item_gap" : 4,
+        "kiwishelf.liquid_glass" : false,
+        "kiwishelf.order" : "spaces_first",
+        "kiwishelf.outer_margin" : 4,
+        "kiwishelf.pocket_edge" : "top",
+        "kiwishelf.thickness" : 30,
+        "kiwishelf.tint_hub_and_plates" : true,
+        "space_bar.active_dim_factor" : 0.6,
+        "space_bar.active_indicator" : "edge_mark",
+        "space_bar.edge" : "top",
+        "space_bar.glyph_gap" : 0
+      }
+    },
+    "style" : {
+      "animations.duration" : 50,
+      "animations.expand_duration" : 0,
+      "animations.on_expand" : false,
+      "animations.on_peek" : false,
+      "animations.on_relayout" : false,
+      "animations.on_scrolling" : false,
+      "animations.on_state_change" : false,
+      "animations.on_window_resize" : false,
+      "animations.on_window_swap" : false,
+      "animations.reveal_duration" : 0,
+      "animations.scroll_duration" : 50,
+      "app_bar.active_indicator" : "edge_mark",
+      "app_bar.edge" : "right",
+      "border.corner_style" : "rounded",
+      "border.glow" : true,
+      "border.glow_size" : 0,
+      "border.sheen" : 0,
+      "border.width" : 2,
+      "gap.global" : {
+        "inner" : {
+          "horizontal" : 0,
+          "vertical" : 0
+        },
+        "outer" : {
+          "bottom" : 0,
+          "left" : 0,
+          "right" : 0,
+          "top" : 0
+        }
+      },
+      "kiwishelf.alignment" : "start",
+      "kiwishelf.background_fit" : "full",
+      "kiwishelf.background_style" : "plain",
+      "kiwishelf.border" : true,
+      "kiwishelf.border_width" : 2,
+      "kiwishelf.corner_roundness" : 14,
+      "kiwishelf.dim_factor" : 0.75,
+      "kiwishelf.fill_fade" : 100,
+      "kiwishelf.font_family" : "System Monospaced",
+      "kiwishelf.font_size" : 20,
+      "kiwishelf.font_weight" : 500,
+      "kiwishelf.glyph_size" : 0,
+      "kiwishelf.highlight_width" : 2,
+      "kiwishelf.icon_source" : "app_image",
+      "kiwishelf.inner_margin" : 0,
+      "kiwishelf.item_gap" : 4,
+      "kiwishelf.liquid_glass" : false,
+      "kiwishelf.order" : "spaces_first",
+      "kiwishelf.outer_margin" : 0,
+      "kiwishelf.pocket_edge" : "right",
+      "kiwishelf.pocket_position" : 14,
+      "kiwishelf.reading_contrast" : 4.5,
+      "kiwishelf.thickness" : 48,
+      "kiwishelf.tint_hub_and_plates" : true,
+      "space_bar.active_dim_factor" : 0.6,
+      "space_bar.active_indicator" : "edge_mark",
+      "space_bar.edge" : "right",
+      "space_bar.glyph_gap" : 0
+    }
+  },
+  "mode" : {
+    "cue" : false
+  },
+  "mode_cycle" : [
+    "monocle",
+    "scrolling",
+    "bsp"
+  ],
+  "modifier" : {
+    "sides" : true
+  },
+  "quit" : {
+    "grid_target_depth" : 5,
+    "layout" : "grid"
+  },
+  "refusal" : {
+    "sound" : false
+  },
+  "scroll_gesture" : {
+    "long_swipes" : false,
+    "natural_scrolling" : {
+      "mouse" : false,
+      "trackpad" : true
+    },
+    "pan" : "control+option",
+    "space_step" : "control+option+command",
+    "step_distance" : 60
+  },
+  "shortcut_base" : "control+option",
+  "shortcut_offer" : {
+    "desktop" : 7,
+    "generation" : 11
+  },
+  "space" : {
+    "scroll_transition" : "slide",
+    "slide_duration" : 300,
+    "transition" : "slide"
+  },
+  "space_history" : "per_screen",
+  "spaces" : [
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "tile_rules" : [
+
+  ]
+}

@@ -52,3 +52,23 @@
 -- KiwiDesk.bind("control+option+n", function()
 --   KiwiDesk.exec(os.getenv("HOME") .. "/.config/sketchybar/plugins/mode_macos.sh")
 -- end, { desc = "macOS menu bar mode" })
+
+-- ---------------------------------------------------------------------------
+-- App launchers (managed in gui.json > Keybindings tab):
+--   control+option+t  -> kitty
+--   control+option+o  -> Obsidian
+--   control+option+v  -> VS Code
+--
+-- To open kitty straight into Neovim instead, bind this in the
+-- Keybindings tab as custom Lua:
+--   KiwiDesk.exec("open -na kitty --args nvim")
+-- ---------------------------------------------------------------------------
+
+-- ---------------------------------------------------------------------------
+-- Color sync with sketchybar (Gruvbox theme)
+-- Source of truth: ~/.config/sketchybar/colors.sh
+-- Run after changing colors there:
+--   ~/.config/sketchybar/plugins/sync_kiwi_colors.sh
+-- It updates the focused/unfocused border, pocket and space-bar
+-- highlight colors in gui.json to match your sketchybar palette.
+-- ---------------------------------------------------------------------------

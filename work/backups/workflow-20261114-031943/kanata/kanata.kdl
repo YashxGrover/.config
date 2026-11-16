@@ -1,0 +1,40 @@
+;; kanata.kdl — starter config
+;; Docs: https://github.com/jtroo/kanata/blob/main/docs/config.adoc
+;; Key codes: https://github.com/jtroo/kanata/blob/main/parser/src/keys/mod.rs
+;; Reference (linkarzu's full config): ~/Downloads/Dotfiles/dotfiles-latest-learn-/kanata/configs/macos.kbd
+;;
+;; IMPORTANT: on macOS kanata needs the Karabiner virtual-HID driver:
+;;   1. brew install --cask karabiner-elements   (installs the driver)
+;;   2. Karabiner-VirtualHIDDevice-Daemon must be allowed in
+;;      System Settings > Privacy & Security
+;;   3. Give kanata "Input Monitoring" permission (first launch prompts for it)
+;;   4. Run:  kanata -c ~/.config/kanata/kanata.kdl
+;;   NOTE: Karabiner-Elements app itself must NOT be running/holding keys
+;;   while kanata intercepts — quit Karabiner, keep only its driver.
+
+(defcfg
+  process-unmapped-keys yes
+  log-layer-changes no
+)
+
+;; Only keys listed in defsrc are intercepted; everything else passes through.
+(defsrc
+  caps
+  h    j    k    l
+)
+
+(deflayer base
+  @cap
+  h    j    k    l
+)
+
+;; Hold CAPS = navigation layer (hjkl -> arrow keys)
+;; Tap CAPS  = Escape (Neovim-friendly)
+(deflayer nav
+  _
+  left down up right
+)
+
+(defalias
+  cap (tap-hold 200 200 esc (layer-toggle nav))
+)

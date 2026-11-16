@@ -1,0 +1,354 @@
+{
+  "app_rules": {},
+  "default": false,
+  "format": 34,
+  "id": "BCE0D63D-080D-4B23-B479-7C4E3C88F775",
+  "main_spaces": [
+    "1"
+  ],
+  "monitor_count": 1,
+  "monitor_sets": [],
+  "name": "Extra",
+  "saved_at": "2026-11-16T14:34:23Z",
+  "settings": {
+    "animations": {
+      "duration": 50,
+      "expand_duration": 0,
+      "on_expand": false,
+      "on_peek": false,
+      "on_relayout": false,
+      "on_scrolling": false,
+      "on_state_change": false,
+      "on_window_resize": false,
+      "on_window_swap": false,
+      "reveal_duration": 0,
+      "scroll_duration": 50
+    },
+    "app_bar": {
+      "active_indicator": "edge_mark",
+      "edge": "right",
+      "group_adjacent_windows": true,
+      "reserve": false,
+      "title_cap": 10
+    },
+    "border": {
+      "corner_style": "rounded",
+      "draw_order": "behind",
+      "enabled": true,
+      "focused_color": "#fab387",
+      "glow": true,
+      "glow_size": 0,
+      "sheen": 0,
+      "unfocused_color": "#a6adc840",
+      "unfocused_enabled": true,
+      "width": 2
+    },
+    "drag": {
+      "drop_zone": {
+        "enabled": true
+      },
+      "ghost": {
+        "enabled": false
+      },
+      "liquid_glass": false
+    },
+    "float_placement": "keep",
+    "float_scale_on_display_change": true,
+    "floating": {
+      "color": "",
+      "mark": true
+    },
+    "gap": {
+      "global": {
+        "inner": {
+          "horizontal": 6,
+          "vertical": 6
+        },
+        "outer": {
+          "bottom": 6,
+          "left": 6,
+          "right": 6,
+          "top": 1
+        }
+      },
+      "override": {}
+    },
+    "kiwishelf": {
+      "active_item_color": "#fab387",
+      "alignment": "start",
+      "background_fit": "full",
+      "background_style": "plain",
+      "border": true,
+      "border_color": "#000000FF",
+      "border_width": 2,
+      "corner_roundness": 14,
+      "dim_factor": 0.75,
+      "fill_color": "#1e1e2eE8",
+      "fill_fade": 100,
+      "font_family": "System Monospaced",
+      "font_size": 20,
+      "font_weight": 500,
+      "glyph_size": 0,
+      "group_badge_color": "#FFFFFFFF",
+      "group_badge_text_color": "#000000FF",
+      "highlight_color": "#FFFFFFFF",
+      "highlight_width": 2,
+      "hover_fill_color": "#FFFFFF1F",
+      "hover_item_color": "#FFFFFFFF",
+      "icon_source": "app_image",
+      "inner_margin": 0,
+      "item_color": "#cdd6f4",
+      "item_gap": 4,
+      "liquid_glass": false,
+      "minimum": 30,
+      "order": "spaces_first",
+      "outer_margin": 0,
+      "pocket_edge": "right",
+      "pocket_position": 14,
+      "pocket_visibility": "auto",
+      "reading_contrast": 4.5,
+      "reveal_style": "fade",
+      "reveal_timeout": 0,
+      "thickness": 48,
+      "tint_hub_and_plates": true
+    },
+    "layout": {
+      "bsp": {
+        "new_window_placement": "after_focused",
+        "ratio_h": 0.5,
+        "ratio_v": 0.5,
+        "strategy": "alternating"
+      },
+      "grid": {
+        "auto_size": false,
+        "columns": 2,
+        "fill_empty_cells": true,
+        "new_window_placement": "last",
+        "rows": 2,
+        "split_direction": "horizontal",
+        "type": "dynamic"
+      },
+      "monocle": {
+        "app_bar": {
+          "visibility": "auto"
+        },
+        "hide_style": "stack",
+        "new_window_placement": "first",
+        "orientation": "horizontal"
+      },
+      "scroll": {
+        "anchor": "follow",
+        "app_bar": {
+          "visibility": "auto"
+        },
+        "fill_when_alone": true,
+        "new_window_placement": "after_focused",
+        "orientation": "horizontal",
+        "slot_size": "85%"
+      },
+      "stack": {
+        "fill_when_alone": true,
+        "master_count": 1,
+        "master_orientation": "horizontal",
+        "master_ratio": 0.8,
+        "new_window_placement": "first",
+        "stack_position": "right"
+      },
+      "track": {
+        "auto_tracks": true,
+        "axis": "vertical",
+        "limit": 3,
+        "new_window": "own_track",
+        "new_window_position": "first"
+      }
+    },
+    "look_origin": {
+      "author": "Maikel Hajiabadi",
+      "colors": {
+        "border.focused_color": "#FFFFFFFF",
+        "border.unfocused_color": "#B0B0B040",
+        "floating.color": "",
+        "kiwishelf.active_item_color": "#FFFFFFFF",
+        "kiwishelf.border_color": "#FFFFFFFF",
+        "kiwishelf.fill_color": "#101314FA",
+        "kiwishelf.group_badge_color": "#A9CCE3FF",
+        "kiwishelf.group_badge_text_color": "#101314FF",
+        "kiwishelf.highlight_color": "#FFFFFFFF",
+        "kiwishelf.hover_fill_color": "#FFFFFF33",
+        "kiwishelf.hover_item_color": "#FFFFFFFF",
+        "kiwishelf.item_color": "#B0B0B0FF",
+        "pocket.color": "#00D2FFFF",
+        "space_bar.focused_highlight_color": "#00D2FFFF",
+        "space_bar.focused_item_color": "#00D2FFFF",
+        "sticky.color": ""
+      },
+      "gallery_id": "black-and-white-tiler",
+      "name": "Black & White Tiler",
+      "style": {
+        "animations.duration": 150,
+        "animations.expand_duration": 500,
+        "animations.on_expand": true,
+        "animations.on_peek": true,
+        "animations.on_relayout": true,
+        "animations.on_scrolling": true,
+        "animations.on_state_change": true,
+        "animations.on_window_resize": true,
+        "animations.on_window_swap": true,
+        "animations.reveal_duration": 800,
+        "animations.scroll_duration": 400,
+        "app_bar.active_indicator": "edge_mark",
+        "app_bar.edge": "top",
+        "border.corner_style": "square",
+        "border.glow": false,
+        "border.glow_size": 0,
+        "border.sheen": 0,
+        "border.width": 4,
+        "gap.global": {
+          "inner": {
+            "horizontal": 4,
+            "vertical": 4
+          },
+          "outer": {
+            "bottom": 4,
+            "left": 4,
+            "right": 4,
+            "top": 4
+          }
+        },
+        "kiwishelf.alignment": "start",
+        "kiwishelf.background_fit": "hug",
+        "kiwishelf.background_style": "plain",
+        "kiwishelf.border": true,
+        "kiwishelf.border_width": 1,
+        "kiwishelf.corner_roundness": 0,
+        "kiwishelf.dim_factor": 0.4,
+        "kiwishelf.fill_fade": 100,
+        "kiwishelf.font_family": "System Monospaced",
+        "kiwishelf.font_size": 0,
+        "kiwishelf.font_weight": 500,
+        "kiwishelf.glyph_size": 0,
+        "kiwishelf.highlight_width": 2,
+        "kiwishelf.icon_source": "app_font",
+        "kiwishelf.inner_margin": 0,
+        "kiwishelf.item_gap": 4,
+        "kiwishelf.liquid_glass": false,
+        "kiwishelf.order": "spaces_first",
+        "kiwishelf.outer_margin": 4,
+        "kiwishelf.pocket_edge": "top",
+        "kiwishelf.thickness": 30,
+        "kiwishelf.tint_hub_and_plates": true,
+        "space_bar.active_dim_factor": 0.6,
+        "space_bar.active_indicator": "edge_mark",
+        "space_bar.edge": "top",
+        "space_bar.glyph_gap": 0
+      }
+    },
+    "maximize": {
+      "anchor": {
+        "laptop": "center",
+        "portrait": "center",
+        "super_ultrawide": "in_place",
+        "ultrawide": "in_place",
+        "widescreen": "center"
+      },
+      "share": {
+        "height": {
+          "laptop": 1,
+          "portrait": 1,
+          "super_ultrawide": 1,
+          "ultrawide": 1,
+          "widescreen": 1
+        },
+        "width": {
+          "laptop": 1,
+          "portrait": 1,
+          "super_ultrawide": 1,
+          "ultrawide": 1,
+          "widescreen": 1
+        }
+      }
+    },
+    "min_window_size": {
+      "bsp": {
+        "height": 260,
+        "width": 260
+      },
+      "floating": {
+        "height": 260,
+        "width": 260
+      },
+      "grid": {
+        "height": 260,
+        "width": 260
+      },
+      "scrolling": {
+        "height": 260,
+        "width": 260
+      },
+      "stack": {
+        "height": 260,
+        "width": 260
+      },
+      "track": {
+        "height": 260,
+        "width": 260
+      }
+    },
+    "min_window_size_override": {},
+    "mouse": {
+      "follows_focus": false,
+      "hover_focus": false,
+      "hover_focus_delay": 200
+    },
+    "mouse_resize": "layout",
+    "new_window_placement_override": {},
+    "pocket": {
+      "color": "#fab387"
+    },
+    "resize": {
+      "step": 50
+    },
+    "shortcut_panel": {
+      "liquid_glass": false
+    },
+    "space": {
+      "icon": {
+        "1": "macwindow",
+        "2": "rectangle.inset.filled"
+      }
+    },
+    "space_bar": {
+      "active_dim_factor": 0.6,
+      "active_indicator": "edge_mark",
+      "edge": "right",
+      "focused_highlight_color": "#fab387",
+      "focused_item_color": "#fab387",
+      "front_app_title_cap": 10,
+      "glyph_gap": 0,
+      "glyph_span": 5,
+      "group_adjacent_windows": true,
+      "hide_empty": true,
+      "inactive_content": "apps",
+      "item_label": "identifier",
+      "reserve": false,
+      "show_front_app": false,
+      "spring_delay": 1500,
+      "sticky_badge": true,
+      "visibility": "auto"
+    },
+    "sticky": {
+      "color": "",
+      "desktop_reach": true,
+      "liquid_glass": false,
+      "mark": true
+    },
+    "swap_skips_cascade": true
+  },
+  "space_modes": {
+    "1": "bsp"
+  },
+  "spaces": [
+    "1"
+  ],
+  "starter_setup": false
+}

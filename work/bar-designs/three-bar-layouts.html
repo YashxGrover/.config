@@ -1,0 +1,66 @@
+<div id="bar-layout-study" class="viz-carousel" aria-label="Three SketchyBar layout previews">
+  <section data-variant="Two clear rows" aria-label="Two clear rows"><div class="desktop" data-layout="rows"></div></section>
+  <section data-variant="One tall row" aria-label="One tall row" hidden><div class="desktop" data-layout="tall"></div></section>
+  <section data-variant="Expandable panels" aria-label="Expandable panels" hidden><div class="desktop" data-layout="panels"></div></section>
+</div>
+<style>
+#bar-layout-study .desktop{--ink:#e3e7f4;--dim:#a8b0c8;--accent:#a6c8ff;--surface:#171c2d;min-height:360px;background:radial-gradient(ellipse at 75% 90%,#614b77 0,transparent 60%),radial-gradient(ellipse at 15% 90%,#23575c 0,transparent 60%),#171d30;color:var(--ink);font:13px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;position:relative;border-radius:10px;overflow:hidden}
+#bar-layout-study .bar{background:var(--surface);box-shadow:0 2px 14px #0005;min-height:48px;padding:0 10px;display:flex;align-items:center;gap:9px;box-sizing:border-box}
+#bar-layout-study .rows{display:block}
+#bar-layout-study .line{min-height:24px;display:flex;align-items:center;gap:12px}
+#bar-layout-study .line+ .line{border-top:1px solid #ffffff0c}
+#bar-layout-study button{font:inherit;color:inherit;border:0;background:transparent;padding:3px 4px;display:inline-flex;align-items:center;justify-content:center;gap:5px;border-radius:3px;white-space:nowrap;cursor:pointer}
+#bar-layout-study button:hover{background:#ffffff14}
+#bar-layout-study button.active{background:#a6c8ff20;color:var(--accent)}
+#bar-layout-study .desktops,#bar-layout-study .spaces,#bar-layout-study .status{display:flex;align-items:center;gap:3px}
+#bar-layout-study .desktops button{font-size:12px}
+#bar-layout-study img{width:17px;height:17px;object-fit:contain}
+#bar-layout-study .stretch{flex:1}
+#bar-layout-study .muted{color:var(--dim)}
+#bar-layout-study .sep{width:1px;height:18px;background:#ffffff20;margin:0 3px}
+#bar-layout-study .spaces button{min-width:20px;padding:3px}
+#bar-layout-study .tall .desktops button{flex-direction:column;gap:3px;padding:4px}
+#bar-layout-study .tall .stats{display:flex;flex-direction:column;align-items:center;font-size:12px;gap:2px}
+#bar-layout-study .music-stack{display:flex;flex-direction:column;gap:3px;font-size:12px}
+#bar-layout-study .window{margin:42px auto 0;width:68%;background:#171d2de8;border:1px solid #ffffff16;border-radius:10px;box-shadow:0 14px 50px #0004;min-height:180px}
+#bar-layout-study .window-head{padding:12px 16px;border-bottom:1px solid #ffffff13;display:flex;align-items:center;gap:6px;color:var(--dim);font-size:12px}
+#bar-layout-study .dot{width:8px;height:8px;border-radius:50%;background:#8d97b0}
+#bar-layout-study .document{padding:22px 24px}
+#bar-layout-study .document h3{font-size:18px;font-weight:500;margin:0 0 16px}
+#bar-layout-study .rule{height:6px;background:#ffffff0c;margin:10px 0;width:85%;border-radius:2px}
+#bar-layout-study .caption{position:absolute;bottom:16px;left:20px;color:#c2c9dd;font-size:12px}
+#bar-layout-study .popup{position:absolute;right:12px;top:58px;z-index:3;width:250px;background:#20273b;border:1px solid #ffffff20;border-radius:9px;box-shadow:0 14px 35px #0006;padding:14px;box-sizing:border-box}
+#bar-layout-study .popup[hidden]{display:none}
+#bar-layout-study .popup h4{font-size:13px;font-weight:500;margin:0 0 12px;color:var(--accent)}
+#bar-layout-study .popup .entry{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid #ffffff0c;font-size:12px}
+#bar-layout-study .popup button{margin-top:10px;background:#a6c8ff20;width:100%}
+#bar-layout-study .apple{font-size:20px}
+@media(max-width:800px){#bar-layout-study .bar,#bar-layout-study .line{flex-wrap:wrap;padding-top:4px;padding-bottom:4px}#bar-layout-study .desktop{min-height:410px}#bar-layout-study .desktops{flex-wrap:wrap}#bar-layout-study .popup{top:110px}#bar-layout-study .window{width:86%;margin-top:28px}#bar-layout-study .caption{right:16px}}
+</style>
+<script>
+(()=>{
+const root=document.getElementById('bar-layout-study');
+const icon=(name,color='a6c8ff')=>`<img alt="" src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/${name}.svg" style="filter:invert(85%) sepia(15%) saturate(750%) hue-rotate(180deg)">`;
+const names=['Assist','Create','Browse','Media','Connect','Develop','Study'];
+const logos=['openai','apple','safari','spotify','discord','visualstudiocode','obsidian'];
+const desktops=()=>`<div class="desktops" aria-label="macOS desktops">${names.map((n,i)=>`<button class="${i===6?'active':''}" data-desktop="${i}" aria-label="Desktop ${i+1}: ${n}">${icon(logos[i])}<span>${n}</span></button>`).join('')}</div>`;
+const spaces=()=>`<div class="spaces" aria-label="KiwiDesk Spaces"><span class="muted">K</span>${[1,2,3,4,5].map(n=>`<button data-space="${n}" class="${n===1?'active':''}">${n}</button>`).join('')}</div>`;
+const app=`<button data-panel="windows" aria-label="Open window switcher">${icon('obsidian')}<span>Obsidian</span></button>`;
+const apple='<button class="apple" data-panel="menu" aria-label="Apple and theme menu"></button>';
+const music='<button data-panel="music">'+icon('spotify')+'<span>Dreams · Fleetwood Mac</span></button>';
+const stats='<button data-panel="stats">CPU 12% · GPU 8% · RAM 51%</button>';
+const system='<span class="muted">◖)) 81%　▰ 86%</span><button data-panel="calendar">Fri 13 · 22:04</button>';
+root.querySelectorAll('.desktop').forEach(stage=>{
+const kind=stage.dataset.layout;
+let bar='';
+if(kind==='rows')bar=`<div class="bar rows"><div class="line">${apple}${app}<span class="stretch"></span>${music}<button data-panel="calendar">◷ Study session · 22:30</button><span class="stretch"></span>${system}</div><div class="line">${desktops()}<span class="sep"></span>${spaces()}<button data-panel="windows">${icon('obsidian')}${icon('visualstudiocode')} +1</button><button data-panel="pocket">▣</button><span class="stretch"></span>${stats}</div></div>`;
+if(kind==='tall')bar=`<div class="bar tall">${apple}<button data-panel="windows">${icon('obsidian')}</button>${desktops()}<span class="sep"></span>${spaces()}<span class="stretch"></span><div class="music-stack"><button data-panel="music">${icon('spotify')} Dreams</button><button data-panel="calendar" class="muted">Study · 22:30</button></div>${['CPU|12%','GPU|8%','RAM|51%'].map(t=>`<button class="stats" data-panel="stats"><span class="muted">${t.split('|')[0]}</span><span>${t.split('|')[1]}</span></button>`).join('')}<div class="music-stack"><span>▰ 86%</span><button data-panel="calendar">22:04</button></div><button data-panel="pocket">▣</button></div>`;
+if(kind==='panels')bar=`<div class="bar">${apple}${app}<span class="sep"></span>${desktops()}<span class="sep"></span>${spaces()}<span class="stretch"></span><button data-panel="music">${icon('spotify')}</button><button data-panel="calendar">◷</button><button data-panel="stats">12%</button><button data-panel="controls">☷</button><span>22:04</span></div>`;
+stage.innerHTML=bar+`<div class="window"><div class="window-head"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="stretch"></span>Obsidian · Functions<span class="stretch"></span></div><div class="document"><h3>Functions & relations</h3><div class="rule"></div><div class="rule" style="width:65%"></div><div class="rule" style="width:77%"></div></div></div><div class="popup" hidden aria-live="polite"></div><div class="caption">${kind==='rows'?'A · Two rows — navigation gets its own lane':kind==='tall'?'B · One tall row — icons above desktop labels':'C · Expandable panels — details appear on click'}</div>`;
+const popup=stage.querySelector('.popup');
+const panels={stats:['System usage',['CPU · 12%','GPU · 8%','RAM · 51%','Obsidian　4.2% CPU','Code　2.8% CPU']],music:['Now playing',['Dreams','Fleetwood Mac · Rumours','Previous　 Pause　 Next']],calendar:['Upcoming',['22:30　Study session','Tomorrow　Review notes']],windows:['Windows · Kiwi Space 1',['Obsidian · Functions','Code · qq.cpp','Crest · Research']],pocket:['Pocket',['Saved windows appear here','Pocket current window']],menu:['Appearance',['Midnight Glass','Warm Graphite','Deep Ocean','Soft Lilac']],controls:['Quick controls',['Launch an app','Pocket windows','Keyboard shortcut guide','Choose theme','Volume　81%'] ]};
+stage.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.desktop!==undefined||b.dataset.space!==undefined){b.parentElement.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x===b));return}if(b.dataset.panel){const key=b.dataset.panel;if(popup.dataset.open===key&&!popup.hidden){popup.hidden=true;return}popup.dataset.open=key;const p=panels[key];popup.innerHTML=`<h4>${p[0]}</h4>${p[1].map(x=>`<div class="entry">${x}</div>`).join('')}<button data-close>Close</button>`;popup.hidden=false}else if(b.hasAttribute('data-close'))popup.hidden=true;});
+if(globalThis.Tweak){const state={accent:'#a6c8ff',surface:'#171c2d'};const t=new Tweak({container:stage,onChange:()=>{stage.style.setProperty('--accent',state.accent);stage.style.setProperty('--surface',state.surface)}});t.addColorPicker(state,'accent',{label:'Accent'});t.addColorPicker(state,'surface',{label:'Bar background'});}
+});
+})();
+</script>

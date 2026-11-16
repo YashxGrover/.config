@@ -1,0 +1,352 @@
+{
+  "version": 1,
+  "desktops": [
+    {
+      "number": 1,
+      "name": "Home",
+      "profile": "Home",
+      "icon": ""
+    },
+    {
+      "number": 2,
+      "name": "Browse",
+      "profile": "Browse",
+      "icon": ""
+    },
+    {
+      "number": 3,
+      "name": "Develop",
+      "profile": "Develop",
+      "icon": ""
+    },
+    {
+      "number": 4,
+      "name": "Assist",
+      "profile": "Assist",
+      "icon": ""
+    },
+    {
+      "number": 5,
+      "name": "Personal",
+      "profile": "Personal",
+      "icon": ""
+    },
+    {
+      "number": 6,
+      "name": "Extra",
+      "profile": "Extra",
+      "icon": ""
+    }
+  ],
+  "spaces": {
+    "count": 1,
+    "fixed_monocle": [
+      "1"
+    ],
+    "mode_cycle": [
+      "monocle",
+      "stack",
+      "bsp",
+      "grid",
+      "track",
+      "scrolling"
+    ]
+  },
+  "gaps": {
+    "inner": 8,
+    "left": 8,
+    "right": 8,
+    "bottom": 8,
+    "top": 48
+  },
+  "apps": [
+    {
+      "keys": "p",
+      "name": "Crest",
+      "bundle_id": "com.pauldavis.crest",
+      "kind": "app",
+      "desktop": 2,
+      "space": "1"
+    },
+    {
+      "keys": "b",
+      "name": "Phi",
+      "bundle_id": "com.phibrowser.Mac",
+      "kind": "app",
+      "desktop": 2,
+      "space": "1"
+    },
+    {
+      "keys": "h",
+      "name": "Helium",
+      "bundle_id": "net.imput.helium",
+      "kind": "app",
+      "desktop": 5,
+      "space": "1"
+    },
+    {
+      "keys": "y",
+      "name": "Microsoft Edge",
+      "bundle_id": "com.microsoft.edgemac",
+      "kind": "app",
+      "desktop": 5,
+      "space": "1"
+    },
+    {
+      "keys": "r",
+      "name": "Safari",
+      "bundle_id": "com.apple.Safari",
+      "kind": "app",
+      "desktop": 2,
+      "space": "1"
+    },
+    {
+      "keys": "t",
+      "name": "kitty",
+      "bundle_id": "net.kovidgoyal.kitty",
+      "kind": "app",
+      "desktop": 3,
+      "space": "1"
+    },
+    {
+      "keys": "o",
+      "name": "Obsidian",
+      "bundle_id": "md.obsidian",
+      "kind": "app",
+      "desktop": 1,
+      "space": "1"
+    },
+    {
+      "keys": "c",
+      "name": "Visual Studio Code",
+      "bundle_id": "com.microsoft.VSCode",
+      "kind": "app",
+      "desktop": 3,
+      "space": "1"
+    },
+    {
+      "keys": "g",
+      "name": "GitHub Desktop",
+      "bundle_id": "com.github.GitHubClient",
+      "kind": "app",
+      "desktop": 3,
+      "space": "1"
+    },
+    {
+      "keys": "x",
+      "name": "Xcode",
+      "bundle_id": "com.apple.dt.Xcode",
+      "kind": "app",
+      "desktop": 3,
+      "space": "1"
+    },
+    {
+      "keys": "v",
+      "name": "Discord",
+      "bundle_id": "com.hnc.Discord",
+      "kind": "app",
+      "desktop": 5,
+      "space": "1"
+    },
+    {
+      "keys": "n",
+      "name": "NaturalReader",
+      "bundle_id": "com.microsoft.edgemac.app.pclfgflcpfaoljnfkkdaehijdkagjkgj",
+      "kind": "app",
+      "desktop": 3,
+      "space": "1"
+    },
+    {
+      "keys": "f",
+      "name": "Finder",
+      "bundle_id": "com.apple.finder",
+      "kind": "app",
+      "desktop": null,
+      "space": null
+    },
+    {
+      "keys": "z",
+      "name": "System Settings",
+      "bundle_id": "com.apple.systempreferences",
+      "kind": "app",
+      "desktop": null,
+      "space": null
+    },
+    {
+      "keys": "m",
+      "name": "Spotify",
+      "bundle_id": "com.spotify.client",
+      "kind": "app",
+      "desktop": 5,
+      "space": "1"
+    },
+    {
+      "keys": "i+1",
+      "name": "ChatGPT",
+      "bundle_id": "com.openai.codex",
+      "kind": "app",
+      "desktop": 4,
+      "space": "1"
+    },
+    {
+      "keys": "i+2",
+      "name": "Claude",
+      "bundle_id": "com.anthropic.claudefordesktop",
+      "kind": "app",
+      "desktop": 4,
+      "space": "1"
+    },
+    {
+      "keys": "i+3",
+      "name": "Gemini",
+      "bundle_id": "com.google.GeminiMacOS",
+      "kind": "app",
+      "desktop": 4,
+      "space": "1"
+    },
+    {
+      "keys": "i+4",
+      "name": "Cursor",
+      "bundle_id": "com.todesktop.230313mzl4w4u92",
+      "kind": "app",
+      "desktop": 4,
+      "space": "1"
+    },
+    {
+      "keys": "i+5",
+      "name": "Antigravity",
+      "bundle_id": "com.google.antigravity",
+      "kind": "app",
+      "desktop": 4,
+      "space": "1"
+    },
+    {
+      "keys": "i+6",
+      "name": "OpenCode",
+      "bundle_id": "ai.opencode.desktop",
+      "kind": "app",
+      "desktop": 4,
+      "space": "1"
+    },
+    {
+      "keys": "i+7",
+      "name": "FreeLLMAPI",
+      "bundle_id": "com.freellmapi.desktop",
+      "kind": "app",
+      "desktop": 4,
+      "space": "1"
+    },
+    {
+      "keys": "j+1",
+      "name": "Notebook",
+      "bundle_id": "com.apple.Safari.WebApp.3E44B9DB-6CFD-40C1-B59A-113A79BAAB91",
+      "kind": "app",
+      "desktop": 1,
+      "space": "1"
+    },
+    {
+      "keys": "j+2",
+      "name": "Keep",
+      "bundle_id": "com.apple.Safari.WebApp.7D6FA221-2D9B-4ED7-8B48-017456C26BBA",
+      "kind": "app",
+      "desktop": 5,
+      "space": "1"
+    },
+    {
+      "keys": "j+3",
+      "name": "INDEX 0",
+      "bundle_id": "com.index0.app",
+      "kind": "app",
+      "desktop": 1,
+      "space": "1"
+    },
+    {
+      "keys": "j+4",
+      "name": "LearnHarness",
+      "bundle_id": "com.learnharness.LearnHarness",
+      "kind": "app",
+      "desktop": 1,
+      "space": "1"
+    },
+    {
+      "keys": "j+5",
+      "name": "Super Productivity",
+      "bundle_id": "com.super-productivity.app",
+      "kind": "app",
+      "desktop": 5,
+      "space": "1"
+    },
+    {
+      "keys": "k+1",
+      "name": "Pages Creator Studio",
+      "bundle_id": "com.apple.Pages",
+      "kind": "app",
+      "desktop": 5,
+      "space": "1"
+    },
+    {
+      "keys": "k+2",
+      "name": "Numbers Creator Studio",
+      "bundle_id": "com.apple.Numbers",
+      "kind": "app",
+      "desktop": 5,
+      "space": "1"
+    },
+    {
+      "keys": "k+3",
+      "name": "Keynote Creator Studio",
+      "bundle_id": "com.apple.Keynote",
+      "kind": "app",
+      "desktop": 5,
+      "space": "1"
+    },
+    {
+      "keys": "u+1",
+      "name": "Preview",
+      "bundle_id": "com.apple.Preview",
+      "kind": "app",
+      "desktop": 5,
+      "space": "1"
+    },
+    {
+      "keys": "u+2",
+      "name": "Calculator",
+      "bundle_id": "com.apple.calculator",
+      "kind": "app",
+      "desktop": 5,
+      "space": "1"
+    },
+    {
+      "keys": "u+3",
+      "name": "Peel",
+      "bundle_id": "com.tuguidragos.Peel",
+      "kind": "app",
+      "desktop": 5,
+      "space": "1"
+    },
+    {
+      "keys": "u+4",
+      "name": "Cloudflare WARP",
+      "bundle_id": "com.cloudflare.1dot1dot1dot1.macos",
+      "kind": "app",
+      "desktop": 5,
+      "space": "1"
+    }
+  ],
+  "font": {
+    "ui": "SF Pro",
+    "code": "SF Mono",
+    "bar_size": 14
+  },
+  "resize": {
+    "persist": true
+  },
+  "bar": {
+    "height": 48,
+    "music": "title",
+    "resources": false
+  },
+  "notes": {
+    "naturalreader": "Resolve installed Edge PWA bundle before enabling shortcut."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "desktops": [
+    {
+      "number": 1,
+      "name": "Study",
+      "profile": "Study",
+      "icon": "\udbc0\ude5a"
+    },
+    {
+      "number": 2,
+      "name": "Browse",
+      "profile": "Browse",
+      "icon": "\udbc0\uddaa"
+    },
+    {
+      "number": 3,
+      "name": "Create",
+      "profile": "Create",
+      "icon": "\udbc0\udd8d"
+    },
+    {
+      "number": 4,
+      "name": "Personal",
+      "profile": "Personal",
+      "icon": "\udbc0\udf9e"
+    }
+  ],
+  "space_labels": {}
+}

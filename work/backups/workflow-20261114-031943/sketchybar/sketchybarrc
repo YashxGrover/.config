@@ -1,0 +1,185 @@
+#!/bin/bash
+source "$HOME/.config/sketchybar/colors.sh"
+source "$HOME/.config/sketchybar/icons.sh"
+PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
+NF="Hack Nerd Font"
+
+# Opaque background prevents the native menu bar showing through on hover.
+sketchybar --bar position=top height=48 color="0xff${BAR:4}" blur_radius=0 \
+  border_width=0 corner_radius=0 shadow=off padding_left=8 padding_right=8 sticky=on
+
+sketchybar --default updates=when_shown \
+  icon.font="$NF:Bold:14.0" label.font="SF Pro:Medium:14.0" \
+  icon.color=$ORANGE label.color=$FG \
+  icon.padding_left=3 icon.padding_right=3 \
+  label.padding_left=0 label.padding_right=4 \
+  padding_left=2 padding_right=2 \
+  background.drawing=off background.color=$PILL background.corner_radius=3 background.height=24 \
+  background.border_width=0 background.border_color=$PILL_BORDER
+
+POPUP=(popup.align=right popup.height=26 popup.blur_radius=30
+  popup.background.color=$POPUP_BG popup.background.corner_radius=12
+  popup.background.border_width=1 popup.background.border_color=$PILL_BORDER)
+
+# ---------- Left ----------
+sketchybar --add item apple left \
+  --set apple icon="" icon.font="SF Pro:Regular:19.0" icon.color=$PURPLE icon.padding_right=6 label.drawing=off \
+        click_script="open -a 'System Settings'" \
+  --add item front_app left \
+  --set front_app icon.drawing=off label.max_chars=18 label.color=$AQUA label.font="SF Pro:Semibold:14.0" script="$PLUGIN_DIR/front_app.sh" \
+  --subscribe front_app front_app_switched
+
+# ---------- Right (first added = rightmost) ----------
+# Clock + calendar popup
+sketchybar --add item clock right \
+  --set clock icon="$ICON_CLOCK" update_freq=30 script="$PLUGIN_DIR/clock.sh" \
+        click_script="$PLUGIN_DIR/clock_popup.sh" "${POPUP[@]}" \
+  --subscribe clock mouse.exited.global
+for i in 1 2 3 4 5 6 7 8; do
+  sketchybar --add item clock.cal$i popup.clock \
+    --set clock.cal$i icon.drawing=off background.drawing=off label="" \
+          label.font="$NF:Regular:12.0" label.padding_left=14 label.padding_right=14
+done
+sketchybar --add item clock.hdr popup.clock \
+  --set clock.hdr icon.drawing=off background.drawing=off label="Upcoming" \
+        label.color=$YELLOW label.font="SF Pro:Bold:12.0" label.padding_left=14
+for i in 1 2 3 4 5; do
+  sketchybar --add item clock.ev$i popup.clock \
+    --set clock.ev$i icon.drawing=off background.drawing=off label="" \
+          label.color=$AQUA label.font="SF Pro:Medium:14.0" \
+          label.padding_left=14 label.padding_right=14
+done
+
+sketchybar --add item calendar_event right \
+  --set calendar_event width=180 y_offset=-11 padding_left=0 padding_right=-180 icon="$ICON_NEXT" icon.color=$AQUA update_freq=120 \
+        label.max_chars=18 script="$PLUGIN_DIR/calendar_event.sh" click_script="open -a Calendar"
+
+# Battery + details popup
+sketchybar --add item battery right \
+  --set battery update_freq=120 script="$PLUGIN_DIR/battery.sh" \
+        click_script="$PLUGIN_DIR/battery_popup.sh" "${POPUP[@]}" \
+  --subscribe battery system_woke power_source_change mouse.exited.global
+for i in 1 2 3 4; do
+  sketchybar --add item battery.p$i popup.battery \
+    --set battery.p$i icon.drawing=off background.drawing=off label="" \
+          label.padding_left=14 label.padding_right=14
+done
+
+# Volume + slider popup
+sketchybar --add item volume right \
+  --set volume icon.color=$BLUE script="$PLUGIN_DIR/volume.sh" \
+        click_script="sketchybar --set volume popup.drawing=toggle" "${POPUP[@]}" \
+  --subscribe volume volume_change mouse.exited.global \
+  --add slider volume.slider popup.volume 120 \
+  --set volume.slider slider.highlight_color=$ORANGE slider.background.color=$BG2 \
+        slider.background.height=6 slider.background.corner_radius=3 \
+        slider.knob="●" slider.knob.drawing=on background.drawing=off \
+        script="$PLUGIN_DIR/volume_slider.sh" \
+  --subscribe volume.slider mouse.clicked
+
+sketchybar --add item wifi right \
+  --set wifi icon="$ICON_WIFI" icon.color=$PURPLE update_freq=15 script="$PLUGIN_DIR/wifi.sh"
+
+sketchybar --add item media right \
+  --set media width=180 y_offset=11 padding_left=0 padding_right=0 icon="$ICON_MUSIC" icon.color=$ORANGE update_freq=5 drawing=off \
+        label.max_chars=18 scroll_texts=on click_script="$PLUGIN_DIR/media_control.sh" \
+        script="$PLUGIN_DIR/media.sh"
+
+
+# ---- menu bar peek: click Apple icon to reveal the macOS menu bar until idle for 2s ----
+sketchybar --set apple click_script="$PLUGIN_DIR/apple_click.sh"
+sketchybar --bar topmost=on
+
+# ---- Top shelf: actual app icons and profile-aware workspace tabs ----
+sketchybar --set front_app width=90 label.max_chars=8 "${POPUP[@]}" \
+  click_script="sketchybar --set front_app popup.drawing=toggle"
+sketchybar --add item windows.header popup.front_app \
+  --set windows.header icon.drawing=off label="Windows on this desktop" label.color=$BLUE
+for slot in {1..24}; do
+  sketchybar --add item "window.option$slot" popup.front_app \
+    --set "window.option$slot" drawing=off label.max_chars=48
+  if [ "$slot" -le 2 ]; then
+    sketchybar --add item "window.tab$slot" left \
+      --set "window.tab$slot" drawing=off label.font="SF Pro:Semibold:10.0"
+  fi
+done
+sketchybar --add item window.all popup.front_app \
+  --set window.all icon.drawing=off label="All windows…" label.color=$BLUE \
+    click_script="/usr/bin/python3 $PLUGIN_DIR/shelf_action.py all"
+for desktop in 1 2 3 4 5 6 7; do
+  sketchybar --add item "desktop.tab$desktop" left \
+    --set "desktop.tab$desktop" width=58 icon.width=58 icon.align=center \
+      icon.y_offset=9 label.y_offset=-13 label.align=center label.width=58 label.padding_left=-58 \
+      label.font="SF Pro:Medium:13.0" icon.padding_left=0 icon.padding_right=0 \
+      label.padding_right=0 padding_left=0 padding_right=0 \
+      background.height=44 background.corner_radius=3 \
+      click_script="/usr/bin/python3 $PLUGIN_DIR/workspace_select.py desktop $desktop"
+done
+sketchybar --add item kiwi.current left \
+  --set kiwi.current drawing=off icon.drawing=off label="1" label.color=$ORANGE \
+    label.font="SF Pro:Bold:15.0" background.drawing=on background.color=$PILL \
+    background.height=30 background.corner_radius=3 "${POPUP[@]}" \
+    click_script="sketchybar --set kiwi.current popup.drawing=toggle"
+sketchybar --add item workspace.header popup.kiwi.current \
+  --set workspace.header icon.drawing=off label="KiwiDesk Spaces" label.color=$ORANGE
+for slot in {1..10}; do
+  sketchybar --add item "workspace.option$slot" popup.kiwi.current \
+    --set "workspace.option$slot" drawing=off
+  sketchybar --add item "kiwi.tab$slot" left \
+    --set "kiwi.tab$slot" drawing=off width=27 label.align=center label.width=25 \
+      icon.width=25 label.padding_left=-25 icon.y_offset=9 label.y_offset=-13 label.font="SF Pro:Semibold:13.0" \
+      icon.padding_left=0 icon.padding_right=0 label.padding_right=0 \
+      padding_left=0 padding_right=0 background.height=44 background.corner_radius=3
+done
+sketchybar --add item pocket left \
+  --set pocket icon="􀈕" icon.font="SF Pro:Regular:19.0" label.drawing=off \
+    click_script="/usr/bin/python3 $PLUGIN_DIR/shelf_action.py pocket"
+
+# Resource summaries stay small; details live in popups, not inline graphs.
+for resource in mem gpu cpu; do
+  case "$resource" in
+    cpu) title=CPU; color=$GREEN ;;
+    gpu) title=GPU; color=$BLUE ;;
+    mem) title=RAM; color=$PURPLE ;;
+  esac
+  sketchybar --add item "$resource" right \
+    --set "$resource" icon="$title" icon.font="SF Pro:Semibold:13.0" \
+      icon.y_offset=9 label.y_offset=-12 icon.color=$color label.color=$color label="—" label.font="SF Pro:Medium:14.0" \
+      script="$PLUGIN_DIR/resources.py" "${POPUP[@]}" \
+    --subscribe "$resource" mouse.clicked mouse.exited.global
+  sketchybar --add item "$resource.header" "popup.$resource" \
+    --set "$resource.header" icon.drawing=off label="Processes" \
+      label.font="SF Pro:Semibold:14.0" label.color=$color
+  for row in 1 2 3 4 5 6 7 8; do
+    sketchybar --add item "$resource.row$row" "popup.$resource" \
+      --set "$resource.row$row" icon.drawing=off label="—" \
+        label.font="SF Mono:Regular:12.0" label.padding_left=14 label.padding_right=14
+  done
+  sketchybar --add item "$resource.note" "popup.$resource" \
+    --set "$resource.note" icon.drawing=off label="" label.color=$DIM \
+      label.font="SF Pro:Regular:12.0"
+  sketchybar --add item "$resource.open" "popup.$resource" \
+    --set "$resource.open" icon.drawing=off label="Open Activity Monitor ↗" \
+      label.color=$BLUE click_script="open -a 'Activity Monitor'"
+done
+sketchybar --set cpu update_freq=5 updates=on
+
+# Focus timer.
+sketchybar --add item focus right \
+  --set focus icon="􀐱" icon.color=$PURPLE label="Focus" \
+    script="$PLUGIN_DIR/focus.py" update_freq=1 \
+  --subscribe focus mouse.clicked system_woke
+
+sketchybar --set wifi label.drawing=off \
+  --set volume label.color=$BLUE label.font="SF Pro:Medium:14.0" \
+  --set battery label.color=$GREEN label.font="SF Pro:Medium:14.0" \
+  --set clock label.color=$AQUA label.font="SF Pro:Semibold:14.0"
+
+# Keep music and the next event in one two-line column beside the center.
+sketchybar --move media after focus --move calendar_event after media
+
+# ---- poll KiwiDesk for desktop/space state ----
+sketchybar --add item kiwi.poll left \
+  --set kiwi.poll drawing=off updates=on update_freq=1 \
+        script="$PLUGIN_DIR/kiwi_poll.sh"
+sketchybar --update

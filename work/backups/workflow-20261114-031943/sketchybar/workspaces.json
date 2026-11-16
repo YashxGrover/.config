@@ -1,0 +1,61 @@
+{
+  "desktops": [
+    {
+      "number": 1,
+      "name": "Assist",
+      "profile": "Assist",
+      "icon": "\udb82\uddd1",
+      "app_icon": "com.openai.codex"
+    },
+    {
+      "number": 2,
+      "name": "Create",
+      "profile": "Create",
+      "icon": "\udb80\udfea",
+      "app_icon": "com.apple.Pages"
+    },
+    {
+      "number": 3,
+      "name": "Browse",
+      "profile": "Browse",
+      "icon": "\udb81\udd9f",
+      "app_icon": "net.imput.helium"
+    },
+    {
+      "number": 4,
+      "name": "Media",
+      "profile": "Media",
+      "icon": "\udb80\udf86",
+      "app_icon": "com.spotify.client"
+    },
+    {
+      "number": 5,
+      "name": "Connect",
+      "profile": "Connect",
+      "icon": "\udb82\udf79",
+      "app_icon": "com.hnc.Discord"
+    },
+    {
+      "number": 6,
+      "name": "Develop",
+      "profile": "Develop",
+      "icon": "\udb80\udd69",
+      "app_icon": "com.microsoft.VSCode"
+    },
+    {
+      "number": 7,
+      "name": "Study",
+      "profile": "Study",
+      "icon": "\udb81\udc74",
+      "app_icon": "md.obsidian"
+    }
+  ],
+  "space_labels": {},
+  "space_icons": [
+    "\u25a3",
+    "\u25a4",
+    "\u25a5",
+    "\u25a6",
+    "\u25a7"
+  ]
+}

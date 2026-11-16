@@ -1,0 +1,17 @@
+# LazyGit — minimal starting config
+# Uses git-delta for the diff view with a gruvbox syntax theme
+git:
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never --syntax-theme gruvbox-dark
+
+gui:
+  theme:
+    selectedLineBgColor:
+      - '#3c3836'
+    activeBorderColor:
+      - '#fe8019'
+    inactiveBorderColor:
+      - '#a89984'
+    optionsTextColor:
+      - '#fabd2f'
